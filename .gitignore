@@ -14,5 +14,6 @@ venv/
 .DS_Store
 Thumbs.dbMiniconda3-latest-Windows-x86_64.exe
 
+.venv
 node_modules/
 package-lock.json
