@@ -243,7 +243,54 @@ data cleaning
 trend analysis
 predictive modeling
 healthcare analytics
+
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+- Node.js (v18+)
+- Python (3.9+)
+
+### 1. Data Science & ML Pipeline
+First, generate the simulated data and run the pipeline to create the required processed JSON files.
+```bash
+# Generate mock datasets
+python scripts/generate_mock_data.py
+
+# Clean datasets
+python src/ml/data_cleaning.py
+
+# Run Exploratory Data Analysis (EDA)
+python src/ml/eda.py
+
+# Detect Outbreaks
+python src/ml/outbreak_detection.py
+
+# Train Classification Model
+python src/ml/diagnosis_model.py
+```
+
+### 2. Backend Server
+The backend serves the processed ML insights to the dashboard.
+```bash
+cd backend
+npm install
+npm run dev
+```
+The server will start on `http://localhost:5000`.
+
+### 3. Frontend Dashboard
+The frontend displays the interactive UI built with React and TailwindCSS.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The application dashboard will be available at `http://localhost:5173`.
+
+---
+
 👩‍💻 Contributors
 
 Team Name -> ClinX
-Team Member -> Saanvi, Kartik, 
+Team Member -> Saanvi, Kartik,

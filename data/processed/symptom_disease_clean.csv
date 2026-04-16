@@ -1,0 +1,1001 @@
+disease,symptom_cough,symptom_shortness_of_breath,symptom_fever,symptom_fatigue,symptom_headache
+Pneumonia,0,0,1,1,1
+Pneumonia,1,0,0,0,0
+Asthma,0,1,0,0,0
+Influenza,1,1,1,1,1
+Diabetes,1,0,0,0,0
+Coronary Artery Disease,1,0,0,1,1
+Diabetes,1,1,0,0,1
+Influenza,1,0,0,0,0
+Pneumonia,1,0,0,0,0
+Coronary Artery Disease,1,1,0,0,1
+Pneumonia,1,1,0,0,1
+Hyperthyroidism,0,1,0,1,0
+Pneumonia,1,1,0,1,0
+Hyperthyroidism,0,1,1,0,0
+Pneumonia,1,1,1,0,1
+Influenza,1,1,0,0,1
+COVID-19,0,1,0,0,1
+COVID-19,0,0,0,0,1
+Influenza,1,1,0,1,0
+COVID-19,1,1,0,0,1
+Diabetes,1,1,0,1,1
+Diabetes,1,0,1,1,0
+Pneumonia,1,1,1,0,0
+Pneumonia,1,0,1,1,0
+COVID-19,1,1,1,0,0
+Influenza,0,0,0,0,1
+COVID-19,0,0,0,0,1
+Diabetes,0,1,0,1,1
+COVID-19,1,1,0,1,0
+Diabetes,0,0,0,1,1
+COVID-19,0,0,1,0,0
+Diabetes,1,0,1,0,0
+Influenza,0,1,0,0,0
+Asthma,1,0,0,1,1
+Pneumonia,1,1,0,1,0
+Pneumonia,0,0,1,1,0
+Hyperthyroidism,1,1,0,0,1
+Diabetes,0,1,1,0,1
+Influenza,1,1,0,1,1
+COVID-19,1,0,0,0,1
+COVID-19,1,0,1,0,0
+Coronary Artery Disease,1,1,1,0,1
+Influenza,1,0,0,0,0
+Influenza,1,0,1,1,1
+Hyperthyroidism,1,1,1,0,1
+Influenza,0,0,0,0,0
+Hyperthyroidism,1,1,1,1,1
+Coronary Artery Disease,1,1,0,1,0
+COVID-19,1,0,1,0,0
+Diabetes,1,1,1,0,0
+Diabetes,0,0,0,1,1
+Pneumonia,0,0,0,0,0
+Influenza,0,0,0,0,0
+Diabetes,1,0,1,0,0
+Hyperthyroidism,1,0,1,0,1
+Diabetes,0,1,1,1,1
+COVID-19,1,1,1,1,1
+Asthma,1,0,0,0,1
+Asthma,0,0,0,1,1
+Pneumonia,0,0,1,0,0
+Pneumonia,1,0,0,0,0
+COVID-19,1,0,1,1,1
+Diabetes,1,1,0,0,0
+Hyperthyroidism,0,0,1,1,1
+Influenza,1,1,0,1,0
+COVID-19,0,1,0,1,1
+Diabetes,0,1,1,1,1
+Coronary Artery Disease,0,1,0,0,0
+Pneumonia,0,0,0,0,1
+Asthma,0,1,1,0,0
+Diabetes,0,0,0,0,0
+Diabetes,1,1,0,1,0
+Coronary Artery Disease,0,0,1,1,0
+Coronary Artery Disease,1,1,0,0,0
+Asthma,1,1,0,0,1
+Hyperthyroidism,0,0,1,1,1
+Influenza,1,0,1,0,1
+COVID-19,1,0,0,0,0
+Influenza,1,0,0,1,0
+Asthma,1,0,0,0,1
+Coronary Artery Disease,0,0,1,0,1
+COVID-19,0,1,0,0,0
+Pneumonia,1,1,1,1,1
+Influenza,1,0,0,0,0
+Pneumonia,0,0,0,0,0
+Pneumonia,0,1,1,0,1
+Influenza,0,1,0,1,0
+COVID-19,1,0,0,0,0
+Coronary Artery Disease,1,1,1,1,1
+Pneumonia,1,0,0,0,1
+Influenza,0,1,1,0,0
+Asthma,0,1,1,0,1
+Influenza,1,1,1,0,1
+Coronary Artery Disease,0,0,1,0,1
+Influenza,0,1,1,1,1
+Influenza,0,0,1,1,1
+COVID-19,1,1,1,1,1
+Pneumonia,1,1,0,0,1
+Asthma,0,0,0,1,0
+Diabetes,1,1,0,1,1
+Asthma,1,1,1,0,1
+COVID-19,1,1,1,0,1
+COVID-19,0,0,0,1,1
+Asthma,1,1,1,0,0
+Asthma,1,0,0,1,0
+Coronary Artery Disease,0,1,1,1,0
+Asthma,0,1,0,0,1
+Pneumonia,1,1,0,0,0
+Pneumonia,1,1,0,1,1
+Asthma,1,0,0,1,0
+COVID-19,0,1,1,0,0
+Influenza,1,0,1,0,1
+Influenza,0,0,0,0,1
+Coronary Artery Disease,1,1,1,1,0
+Asthma,1,1,0,1,1
+Influenza,1,0,1,1,0
+Influenza,0,0,0,0,0
+Asthma,1,1,1,1,1
+Pneumonia,0,1,1,0,0
+Influenza,0,0,0,1,1
+Hyperthyroidism,1,0,0,1,1
+Pneumonia,0,1,0,1,0
+Influenza,0,1,0,0,0
+Pneumonia,0,1,1,0,1
+Influenza,0,0,0,1,0
+COVID-19,1,0,1,1,0
+Asthma,0,0,0,0,0
+Diabetes,0,0,1,0,1
+Pneumonia,0,0,0,1,1
+Asthma,0,1,0,0,1
+COVID-19,1,0,1,1,0
+Pneumonia,0,0,1,0,0
+Hyperthyroidism,0,1,1,0,1
+Asthma,0,0,0,1,0
+Pneumonia,1,0,1,1,1
+Asthma,1,1,0,0,0
+Hyperthyroidism,1,1,1,0,0
+Pneumonia,0,0,1,0,1
+Coronary Artery Disease,0,0,1,0,1
+Diabetes,1,0,1,0,0
+Diabetes,0,1,1,1,0
+Asthma,0,0,1,0,1
+Asthma,0,1,1,1,1
+Hyperthyroidism,0,0,0,1,0
+Coronary Artery Disease,1,0,0,1,0
+Hyperthyroidism,0,1,1,1,1
+Influenza,1,0,0,1,1
+Hyperthyroidism,1,0,1,1,0
+Influenza,1,1,1,0,1
+Coronary Artery Disease,0,0,0,1,0
+Diabetes,0,1,1,1,1
+COVID-19,0,1,0,1,1
+Asthma,0,1,0,0,1
+COVID-19,0,0,1,0,1
+Asthma,1,1,0,0,1
+Influenza,0,0,0,1,1
+Hyperthyroidism,1,0,1,0,0
+Coronary Artery Disease,0,1,0,0,1
+Influenza,1,0,0,1,0
+Influenza,1,1,0,1,1
+Pneumonia,1,1,0,0,0
+Coronary Artery Disease,0,1,1,1,1
+Diabetes,0,0,0,0,0
+Diabetes,1,0,0,0,1
+Influenza,1,1,0,1,1
+Diabetes,0,0,1,1,0
+Coronary Artery Disease,0,0,0,1,1
+Influenza,0,1,0,0,1
+Asthma,1,0,0,1,0
+COVID-19,0,0,1,0,0
+Influenza,0,0,1,0,1
+COVID-19,0,1,1,1,1
+Diabetes,1,0,0,0,1
+Influenza,1,1,0,0,1
+COVID-19,1,0,0,0,0
+Diabetes,1,1,1,1,0
+COVID-19,1,0,1,0,1
+Influenza,0,1,0,0,1
+Hyperthyroidism,0,0,0,0,0
+Coronary Artery Disease,1,1,0,1,1
+Asthma,1,1,1,1,0
+Asthma,1,0,1,1,1
+Diabetes,0,0,0,0,1
+Diabetes,0,0,0,1,0
+Diabetes,1,1,1,1,0
+Pneumonia,1,1,1,0,0
+Diabetes,1,1,0,0,0
+COVID-19,0,0,0,1,0
+Pneumonia,0,1,1,1,0
+Pneumonia,0,0,0,0,0
+COVID-19,0,1,0,0,0
+Influenza,0,0,1,1,0
+Coronary Artery Disease,0,0,1,0,0
+COVID-19,1,0,0,1,1
+Pneumonia,0,1,0,0,1
+Coronary Artery Disease,1,1,0,1,0
+Pneumonia,1,0,1,0,0
+COVID-19,1,1,0,1,1
+Coronary Artery Disease,0,0,0,0,1
+Coronary Artery Disease,1,0,0,0,0
+COVID-19,0,0,1,1,1
+Pneumonia,1,1,0,0,0
+Hyperthyroidism,1,0,1,1,0
+Asthma,0,1,0,0,0
+Coronary Artery Disease,1,1,1,1,0
+Asthma,0,1,1,0,1
+Pneumonia,1,1,0,1,0
+Diabetes,1,0,1,0,0
+Pneumonia,0,1,1,0,0
+Coronary Artery Disease,0,1,1,1,1
+Pneumonia,0,0,0,1,0
+Hyperthyroidism,1,0,1,1,1
+Coronary Artery Disease,0,0,0,0,1
+Coronary Artery Disease,1,1,0,1,0
+Pneumonia,1,1,1,0,0
+COVID-19,1,0,0,1,1
+Asthma,0,1,1,1,1
+Diabetes,1,1,0,0,0
+Influenza,0,1,1,0,1
+COVID-19,1,0,0,0,1
+Coronary Artery Disease,1,1,0,0,0
+COVID-19,1,0,0,0,0
+Influenza,1,1,1,1,1
+Asthma,0,0,0,0,1
+Hyperthyroidism,0,0,1,1,0
+Influenza,0,0,1,0,0
+Coronary Artery Disease,0,1,1,1,1
+Coronary Artery Disease,1,0,0,1,1
+Influenza,1,1,1,0,1
+Hyperthyroidism,1,1,1,0,0
+Influenza,1,1,1,1,1
+Hyperthyroidism,0,0,1,1,0
+Pneumonia,0,0,0,1,0
+Hyperthyroidism,0,1,0,0,1
+Hyperthyroidism,1,1,1,1,0
+Coronary Artery Disease,1,0,0,1,1
+Pneumonia,1,0,0,1,0
+Diabetes,1,0,1,0,1
+Hyperthyroidism,1,0,0,1,0
+Asthma,1,0,0,0,1
+Diabetes,1,1,1,0,0
+Asthma,1,1,0,1,1
+Asthma,0,1,0,0,1
+COVID-19,1,1,0,0,1
+Pneumonia,0,0,1,0,1
+Asthma,0,0,1,0,1
+Hyperthyroidism,1,1,0,1,1
+Coronary Artery Disease,1,1,1,1,1
+Pneumonia,1,0,1,0,1
+Influenza,0,0,1,0,1
+Pneumonia,1,1,1,0,0
+Asthma,0,0,1,1,1
+Influenza,1,1,1,0,1
+Pneumonia,0,0,1,1,0
+COVID-19,1,0,1,1,1
+Influenza,1,1,1,1,1
+Coronary Artery Disease,1,1,1,0,1
+Coronary Artery Disease,1,0,0,0,0
+Asthma,1,1,0,1,0
+Influenza,1,1,0,0,0
+Influenza,1,0,0,0,1
+Pneumonia,1,0,1,0,1
+COVID-19,1,0,0,1,1
+Coronary Artery Disease,1,0,0,1,1
+Pneumonia,1,0,0,0,0
+Asthma,1,0,1,0,1
+Diabetes,1,1,1,0,0
+Diabetes,1,0,0,0,0
+Influenza,1,0,0,1,0
+Pneumonia,1,1,0,1,0
+Influenza,1,1,1,1,1
+Asthma,1,0,0,1,1
+Coronary Artery Disease,1,0,1,0,1
+Hyperthyroidism,0,0,0,0,0
+Diabetes,1,0,1,0,1
+Asthma,1,0,0,1,1
+Pneumonia,1,0,1,0,0
+Pneumonia,1,0,1,1,0
+COVID-19,0,1,1,0,1
+Asthma,0,1,0,0,1
+Influenza,1,1,1,0,1
+Asthma,1,1,0,0,1
+COVID-19,1,1,1,1,0
+Hyperthyroidism,1,1,0,1,1
+Diabetes,1,0,0,0,0
+Influenza,1,1,1,0,1
+Coronary Artery Disease,0,1,0,0,0
+Asthma,0,0,0,1,1
+Hyperthyroidism,1,1,0,1,1
+Coronary Artery Disease,1,1,0,1,1
+Diabetes,1,1,1,0,0
+COVID-19,0,0,1,1,1
+Influenza,0,0,0,1,0
+Pneumonia,1,1,1,0,0
+Hyperthyroidism,0,0,1,1,0
+Influenza,0,0,1,1,0
+Influenza,0,0,0,0,1
+Asthma,0,0,1,1,1
+Diabetes,1,0,0,1,1
+Influenza,1,1,1,1,0
+Asthma,0,1,1,1,0
+Coronary Artery Disease,1,1,1,1,0
+Coronary Artery Disease,0,0,1,0,0
+Pneumonia,1,1,0,0,1
+Influenza,0,1,1,1,0
+Influenza,1,1,1,0,0
+Influenza,0,0,1,0,1
+Pneumonia,0,0,1,1,1
+Diabetes,1,1,1,1,0
+Diabetes,0,0,0,0,0
+Hyperthyroidism,0,0,0,1,0
+COVID-19,0,1,1,1,1
+Influenza,0,1,0,1,0
+Pneumonia,0,1,0,0,1
+Asthma,1,0,1,0,1
+Influenza,1,1,0,0,0
+Influenza,0,1,0,1,1
+Pneumonia,1,1,1,0,0
+Influenza,0,1,0,0,0
+COVID-19,0,1,1,1,1
+Influenza,0,0,0,0,1
+Hyperthyroidism,0,1,0,1,0
+Influenza,0,1,1,0,0
+Pneumonia,1,0,0,0,0
+Coronary Artery Disease,1,0,1,0,1
+Pneumonia,0,1,0,0,1
+Coronary Artery Disease,0,1,0,0,0
+Influenza,0,0,1,0,0
+Asthma,0,0,0,1,1
+Diabetes,0,0,0,1,1
+Diabetes,1,0,1,1,0
+Coronary Artery Disease,0,0,0,0,0
+Diabetes,0,1,1,1,0
+Hyperthyroidism,0,0,1,1,0
+Pneumonia,1,1,1,1,0
+Coronary Artery Disease,0,1,1,0,1
+Coronary Artery Disease,1,1,1,1,1
+Asthma,0,0,0,1,0
+Hyperthyroidism,0,1,0,0,0
+COVID-19,1,0,1,0,1
+Diabetes,1,1,1,1,0
+Pneumonia,0,0,0,1,0
+Influenza,1,0,0,0,0
+Asthma,0,1,0,0,1
+COVID-19,1,1,1,1,0
+Asthma,1,0,1,1,1
+Hyperthyroidism,0,0,0,0,1
+Pneumonia,0,0,0,1,0
+COVID-19,1,0,0,1,0
+Influenza,0,1,0,1,0
+COVID-19,1,1,1,0,1
+Influenza,0,0,1,1,1
+Asthma,0,0,1,0,0
+Diabetes,0,0,0,0,1
+Pneumonia,0,1,1,1,1
+Pneumonia,1,1,0,0,1
+Coronary Artery Disease,1,1,0,1,0
+Asthma,0,1,1,1,0
+Asthma,1,0,1,0,0
+Hyperthyroidism,1,1,1,1,1
+Diabetes,0,0,0,1,1
+Influenza,0,0,0,0,0
+Asthma,0,0,0,1,1
+Pneumonia,1,0,1,0,0
+Pneumonia,0,0,1,1,1
+COVID-19,1,0,1,0,0
+COVID-19,0,0,1,1,0
+Influenza,1,1,1,1,1
+COVID-19,0,0,1,0,0
+Diabetes,1,0,1,0,0
+Diabetes,1,1,0,1,0
+Hyperthyroidism,0,0,1,0,1
+Hyperthyroidism,0,1,0,0,1
+Hyperthyroidism,0,0,1,1,1
+Pneumonia,0,1,1,0,1
+Coronary Artery Disease,0,0,1,0,0
+Asthma,0,1,1,1,1
+Pneumonia,0,0,0,0,0
+Asthma,0,1,0,1,0
+Coronary Artery Disease,0,0,1,0,0
+Pneumonia,0,0,1,0,1
+Hyperthyroidism,0,0,1,1,0
+Pneumonia,0,0,0,0,1
+Influenza,0,1,1,0,0
+Influenza,0,1,0,0,1
+Influenza,1,1,0,1,1
+Pneumonia,1,1,0,0,0
+Asthma,0,1,1,0,1
+COVID-19,0,1,0,1,0
+Influenza,0,0,1,1,0
+Asthma,1,1,1,0,1
+Influenza,0,0,0,0,0
+Asthma,0,1,1,0,0
+Pneumonia,1,0,1,0,0
+Diabetes,1,0,0,0,0
+Hyperthyroidism,1,0,1,1,0
+Pneumonia,0,0,1,1,1
+Influenza,0,0,1,1,1
+COVID-19,0,0,0,1,1
+Pneumonia,0,1,0,0,0
+COVID-19,0,1,0,0,1
+Asthma,0,1,1,0,1
+COVID-19,1,1,1,1,1
+Diabetes,0,1,0,1,0
+Diabetes,0,0,0,1,0
+Hyperthyroidism,1,0,0,0,0
+Hyperthyroidism,0,0,0,1,1
+Pneumonia,0,0,1,1,0
+Pneumonia,1,1,0,1,0
+Hyperthyroidism,0,0,0,1,0
+Hyperthyroidism,0,1,0,1,1
+Diabetes,1,0,1,1,1
+Diabetes,1,0,1,0,1
+Pneumonia,0,0,1,1,0
+Asthma,0,1,1,1,1
+COVID-19,1,1,1,0,1
+Coronary Artery Disease,0,1,0,1,1
+Asthma,0,0,0,1,0
+Coronary Artery Disease,0,1,1,0,1
+Hyperthyroidism,0,0,1,1,0
+Hyperthyroidism,0,1,1,1,0
+Hyperthyroidism,0,1,0,0,0
+COVID-19,0,0,1,1,0
+Diabetes,1,0,1,1,1
+Influenza,1,1,0,0,0
+Hyperthyroidism,1,1,0,0,1
+Influenza,1,0,0,0,1
+Asthma,0,1,0,0,1
+Pneumonia,1,1,1,1,0
+Coronary Artery Disease,1,0,0,0,1
+Asthma,0,0,0,1,0
+Hyperthyroidism,0,0,0,0,1
+COVID-19,0,1,1,1,0
+COVID-19,1,0,1,0,0
+Coronary Artery Disease,0,0,0,0,1
+Asthma,0,1,1,0,0
+Asthma,0,1,1,1,0
+Coronary Artery Disease,1,0,0,0,0
+Asthma,0,1,0,1,1
+Coronary Artery Disease,0,0,1,0,1
+Influenza,1,0,0,1,1
+Coronary Artery Disease,1,1,0,0,1
+Coronary Artery Disease,0,1,0,0,1
+Coronary Artery Disease,1,1,1,1,0
+Influenza,1,1,0,0,0
+COVID-19,0,0,1,1,0
+Coronary Artery Disease,0,0,0,1,0
+Coronary Artery Disease,0,1,0,0,1
+Coronary Artery Disease,1,0,0,1,0
+Diabetes,1,0,1,1,0
+Influenza,0,0,0,1,1
+Diabetes,0,1,1,1,1
+Diabetes,0,1,0,1,0
+Diabetes,1,0,1,0,1
+Diabetes,1,0,1,1,0
+Coronary Artery Disease,1,0,0,0,1
+Influenza,1,0,1,1,1
+Influenza,0,0,1,1,1
+Hyperthyroidism,0,1,0,0,0
+Influenza,0,0,0,0,0
+Hyperthyroidism,1,0,0,0,1
+Asthma,1,0,1,0,1
+Asthma,1,1,1,0,0
+Asthma,0,1,0,1,0
+Asthma,1,0,1,0,0
+Coronary Artery Disease,0,0,0,1,1
+Pneumonia,1,0,1,0,1
+Pneumonia,0,1,1,0,0
+Pneumonia,1,1,0,0,0
+Hyperthyroidism,1,1,0,1,0
+Pneumonia,0,0,1,0,1
+COVID-19,0,0,1,1,1
+Hyperthyroidism,0,0,1,1,0
+Coronary Artery Disease,0,1,1,1,1
+Coronary Artery Disease,0,1,0,1,1
+Asthma,1,1,0,0,1
+Asthma,0,1,1,0,1
+Asthma,1,0,1,1,0
+Pneumonia,0,1,1,0,1
+Coronary Artery Disease,0,0,1,0,0
+COVID-19,1,0,1,1,1
+Hyperthyroidism,1,1,0,1,0
+COVID-19,0,1,0,0,1
+Hyperthyroidism,1,1,1,1,0
+COVID-19,1,1,0,1,0
+COVID-19,1,0,1,0,0
+Diabetes,0,1,1,1,1
+Asthma,0,0,1,1,0
+Diabetes,0,1,1,0,1
+Pneumonia,0,1,0,0,0
+Asthma,0,0,1,1,0
+Coronary Artery Disease,0,1,1,1,1
+Influenza,0,0,1,0,0
+Influenza,0,1,1,1,1
+Asthma,0,1,1,1,0
+Hyperthyroidism,1,0,0,1,1
+Hyperthyroidism,1,0,0,0,1
+COVID-19,0,1,1,1,0
+COVID-19,1,0,1,1,1
+Coronary Artery Disease,1,1,0,0,1
+Influenza,1,1,1,0,1
+Hyperthyroidism,0,1,1,0,0
+COVID-19,0,1,1,1,1
+COVID-19,1,0,1,1,0
+Hyperthyroidism,0,0,1,1,1
+Diabetes,0,1,1,0,0
+Pneumonia,0,1,0,0,0
+Asthma,0,1,0,0,0
+COVID-19,0,0,1,0,0
+Influenza,1,1,1,0,1
+COVID-19,0,1,1,1,1
+Asthma,1,0,1,0,0
+Diabetes,0,0,0,0,1
+COVID-19,0,1,1,1,0
+COVID-19,1,0,1,0,0
+Hyperthyroidism,0,1,0,0,1
+COVID-19,1,0,0,0,0
+Coronary Artery Disease,1,0,0,0,1
+Hyperthyroidism,0,1,1,0,1
+Influenza,1,0,0,1,0
+COVID-19,1,0,1,1,1
+Coronary Artery Disease,0,1,1,0,1
+COVID-19,0,0,0,0,1
+Coronary Artery Disease,1,1,0,1,0
+Coronary Artery Disease,1,1,0,0,0
+Asthma,0,1,0,0,0
+Asthma,1,0,0,1,0
+Asthma,1,0,1,1,1
+Asthma,1,0,1,0,1
+Pneumonia,0,0,0,0,0
+Asthma,1,0,0,1,1
+COVID-19,0,1,1,1,0
+Diabetes,0,1,1,0,1
+Coronary Artery Disease,0,1,1,0,1
+Hyperthyroidism,0,0,1,1,0
+Influenza,0,0,1,0,0
+Asthma,0,0,1,1,0
+Asthma,1,0,0,0,1
+Hyperthyroidism,1,1,1,0,0
+Pneumonia,0,0,0,0,1
+Coronary Artery Disease,1,1,1,1,0
+Pneumonia,0,0,0,0,1
+Influenza,0,0,0,0,0
+Asthma,0,1,1,1,1
+Asthma,0,1,1,0,1
+Asthma,1,0,1,0,0
+Hyperthyroidism,0,0,0,0,1
+Asthma,0,0,1,1,1
+Influenza,1,1,1,0,1
+Influenza,1,0,0,0,0
+Diabetes,1,1,0,0,0
+Coronary Artery Disease,1,1,0,1,0
+Asthma,0,1,1,0,0
+Coronary Artery Disease,1,1,0,1,0
+Pneumonia,0,1,1,0,0
+Hyperthyroidism,0,0,1,1,0
+Hyperthyroidism,1,1,1,1,0
+Influenza,0,0,1,1,1
+Influenza,1,1,1,0,0
+Hyperthyroidism,1,1,0,1,0
+Coronary Artery Disease,0,0,1,0,1
+COVID-19,1,0,0,1,0
+Hyperthyroidism,1,1,0,1,1
+Coronary Artery Disease,0,1,0,0,1
+Influenza,0,1,1,1,0
+Pneumonia,0,0,1,0,1
+Pneumonia,0,0,1,1,1
+Diabetes,0,0,0,0,0
+Hyperthyroidism,0,0,0,0,1
+Diabetes,1,1,1,1,1
+Coronary Artery Disease,0,1,0,1,0
+Asthma,1,1,1,1,1
+Diabetes,0,0,1,0,0
+Asthma,0,0,1,1,0
+Diabetes,1,0,0,1,1
+Asthma,1,1,1,0,0
+COVID-19,1,0,1,1,1
+Asthma,1,1,0,0,0
+Asthma,0,1,0,1,0
+COVID-19,0,1,1,1,0
+Hyperthyroidism,0,1,0,1,1
+Coronary Artery Disease,1,0,0,1,0
+Pneumonia,1,0,0,1,0
+Pneumonia,1,1,1,0,1
+Coronary Artery Disease,1,1,0,0,1
+Asthma,0,1,0,1,1
+Pneumonia,1,1,0,0,1
+Pneumonia,0,1,1,1,0
+Hyperthyroidism,1,1,1,1,1
+COVID-19,1,0,0,0,1
+Hyperthyroidism,0,0,0,0,1
+Diabetes,0,0,0,1,1
+Pneumonia,1,0,1,1,0
+Diabetes,0,0,0,1,1
+Asthma,0,1,0,0,0
+Hyperthyroidism,1,0,1,0,0
+Hyperthyroidism,1,0,1,0,1
+Influenza,1,1,0,1,1
+Asthma,1,1,0,1,0
+Asthma,1,0,0,1,1
+Diabetes,1,0,1,1,0
+Hyperthyroidism,1,1,0,1,0
+Asthma,1,0,0,0,0
+COVID-19,0,0,0,0,1
+Asthma,0,1,1,1,1
+Hyperthyroidism,0,0,1,1,1
+Coronary Artery Disease,1,0,0,0,0
+Coronary Artery Disease,1,1,1,0,1
+Diabetes,1,1,0,0,1
+Influenza,0,1,0,0,0
+Pneumonia,1,0,0,0,1
+Hyperthyroidism,0,1,1,1,1
+Coronary Artery Disease,0,1,0,0,0
+Asthma,1,0,1,0,1
+Influenza,0,0,1,0,0
+Influenza,0,1,1,0,1
+Coronary Artery Disease,0,1,0,0,0
+Diabetes,1,0,1,1,1
+Hyperthyroidism,1,1,0,1,1
+Diabetes,0,0,1,0,1
+Coronary Artery Disease,0,0,1,0,1
+Influenza,0,0,0,1,0
+COVID-19,1,0,1,1,1
+Diabetes,1,1,1,1,1
+Hyperthyroidism,1,0,1,1,0
+Diabetes,0,1,1,1,0
+COVID-19,0,0,1,1,0
+Influenza,0,1,1,1,1
+Influenza,0,0,1,0,1
+Hyperthyroidism,1,1,1,1,0
+Hyperthyroidism,0,1,1,0,0
+COVID-19,0,1,1,1,1
+Influenza,0,0,0,1,0
+Influenza,0,0,0,0,0
+Pneumonia,0,0,1,0,0
+Diabetes,0,1,1,1,0
+Pneumonia,0,1,1,0,0
+Influenza,0,1,0,0,0
+Asthma,0,1,0,1,0
+Coronary Artery Disease,1,0,1,0,1
+COVID-19,1,0,0,1,0
+Pneumonia,0,0,1,1,1
+Hyperthyroidism,0,1,0,0,1
+Diabetes,1,1,1,0,0
+Pneumonia,1,1,1,1,0
+Asthma,0,0,1,1,1
+Asthma,1,1,0,1,0
+COVID-19,0,0,0,1,0
+Influenza,0,1,0,1,1
+Coronary Artery Disease,1,1,1,0,0
+Hyperthyroidism,1,0,1,1,0
+Hyperthyroidism,1,0,0,0,1
+Diabetes,0,1,1,1,1
+Asthma,1,1,0,0,0
+Diabetes,1,0,0,1,0
+Influenza,0,0,0,1,0
+Pneumonia,0,1,1,0,0
+COVID-19,0,1,0,1,0
+Asthma,1,1,1,0,1
+Influenza,1,1,1,0,1
+Coronary Artery Disease,0,1,0,1,0
+Hyperthyroidism,0,0,0,0,1
+Hyperthyroidism,0,0,1,0,0
+Hyperthyroidism,1,0,0,0,0
+COVID-19,1,1,1,1,0
+Pneumonia,1,1,0,1,1
+Pneumonia,0,1,1,0,1
+Hyperthyroidism,0,0,1,0,1
+Coronary Artery Disease,1,1,1,0,1
+Diabetes,1,1,1,0,0
+Influenza,1,1,0,0,0
+Hyperthyroidism,1,0,1,1,1
+Coronary Artery Disease,1,1,1,1,1
+Diabetes,1,0,0,1,0
+Asthma,1,1,1,1,0
+Coronary Artery Disease,0,1,1,0,1
+Hyperthyroidism,0,0,1,0,1
+COVID-19,0,0,0,1,0
+COVID-19,0,1,1,1,0
+Hyperthyroidism,1,1,0,0,1
+Asthma,1,0,1,0,1
+Hyperthyroidism,0,0,0,1,1
+Pneumonia,0,1,1,0,0
+Hyperthyroidism,0,1,0,1,1
+Hyperthyroidism,0,1,1,1,0
+Asthma,0,1,1,1,1
+Influenza,1,0,1,0,0
+Coronary Artery Disease,0,0,0,1,0
+Influenza,0,1,0,1,1
+Coronary Artery Disease,1,0,1,1,1
+Influenza,1,0,1,1,0
+Hyperthyroidism,1,1,1,1,0
+Diabetes,1,1,1,0,1
+Influenza,0,0,1,0,0
+Pneumonia,1,1,1,1,0
+Coronary Artery Disease,0,0,1,1,0
+Influenza,0,0,1,0,0
+Coronary Artery Disease,0,0,1,0,1
+Asthma,1,1,1,0,0
+COVID-19,1,0,0,0,1
+Diabetes,1,1,1,1,0
+Asthma,1,0,0,1,0
+Hyperthyroidism,1,0,1,0,1
+Diabetes,1,1,0,0,0
+Influenza,1,0,1,1,0
+Coronary Artery Disease,1,1,0,0,1
+Coronary Artery Disease,0,0,1,0,1
+Asthma,1,0,0,1,1
+Asthma,0,1,1,1,0
+Coronary Artery Disease,0,0,0,0,1
+COVID-19,1,0,0,1,0
+Influenza,1,0,0,1,1
+COVID-19,0,0,1,0,1
+Pneumonia,1,1,0,0,1
+Hyperthyroidism,1,0,0,0,1
+Coronary Artery Disease,0,1,0,0,0
+COVID-19,0,0,0,0,0
+Coronary Artery Disease,1,1,1,0,0
+Asthma,0,1,1,1,0
+COVID-19,1,1,1,0,1
+COVID-19,1,1,0,1,0
+Asthma,1,1,1,0,1
+COVID-19,1,0,0,1,1
+COVID-19,1,0,0,1,0
+Asthma,1,1,0,1,1
+Pneumonia,0,0,1,1,0
+Hyperthyroidism,1,1,0,0,1
+Asthma,0,1,1,0,1
+Coronary Artery Disease,0,1,0,1,0
+Diabetes,0,0,0,1,0
+Influenza,1,1,0,0,1
+Asthma,1,1,0,1,0
+Influenza,1,1,1,1,1
+Coronary Artery Disease,0,1,1,0,0
+Pneumonia,0,1,1,0,0
+Asthma,0,0,1,1,1
+Influenza,1,0,0,1,1
+Hyperthyroidism,0,1,1,1,0
+Pneumonia,0,0,1,0,1
+Influenza,0,1,1,0,1
+Pneumonia,1,0,0,0,0
+Influenza,1,0,0,0,0
+Diabetes,0,1,0,1,1
+COVID-19,0,1,1,0,1
+Hyperthyroidism,1,0,0,1,0
+Hyperthyroidism,1,0,1,0,1
+Diabetes,0,0,0,0,0
+Influenza,1,0,1,1,1
+Hyperthyroidism,1,0,0,0,0
+Asthma,0,1,0,0,0
+Hyperthyroidism,0,0,1,1,0
+Diabetes,0,0,1,1,0
+Hyperthyroidism,1,1,0,1,1
+Hyperthyroidism,0,0,1,1,0
+Diabetes,0,0,0,1,0
+Influenza,1,0,0,1,0
+Coronary Artery Disease,1,1,0,1,1
+Hyperthyroidism,1,1,0,1,0
+Asthma,1,0,1,1,1
+Asthma,0,0,0,1,0
+Asthma,0,1,0,1,1
+Coronary Artery Disease,1,0,1,0,1
+Pneumonia,0,1,0,0,1
+Hyperthyroidism,0,1,0,1,1
+Influenza,0,0,1,1,1
+Asthma,0,1,0,1,0
+Coronary Artery Disease,0,1,0,0,0
+Hyperthyroidism,0,1,1,0,0
+Coronary Artery Disease,1,0,0,0,1
+Asthma,0,1,1,0,1
+Coronary Artery Disease,1,0,0,0,0
+Pneumonia,1,1,0,0,0
+Pneumonia,1,0,0,1,0
+Pneumonia,0,0,0,0,0
+Hyperthyroidism,1,0,1,0,0
+Influenza,0,1,1,0,1
+Coronary Artery Disease,1,1,1,0,1
+Coronary Artery Disease,0,0,0,0,0
+COVID-19,0,1,1,0,1
+Hyperthyroidism,0,1,0,0,1
+Coronary Artery Disease,1,0,0,1,0
+Hyperthyroidism,1,1,0,0,1
+Hyperthyroidism,0,1,0,0,1
+Asthma,1,1,1,1,0
+COVID-19,1,1,0,0,1
+Asthma,1,1,1,0,0
+Asthma,1,1,1,1,0
+Pneumonia,0,0,0,1,0
+Diabetes,0,0,0,1,1
+Coronary Artery Disease,0,1,1,1,0
+Asthma,1,0,0,0,0
+Diabetes,1,1,1,0,0
+Coronary Artery Disease,0,1,0,1,0
+Asthma,1,1,1,1,0
+COVID-19,0,0,1,1,0
+Asthma,1,0,1,0,0
+Hyperthyroidism,1,0,0,0,0
+Hyperthyroidism,1,0,1,1,0
+Pneumonia,0,1,1,0,1
+Hyperthyroidism,1,0,0,0,0
+Influenza,0,1,0,0,1
+Coronary Artery Disease,1,1,1,1,0
+Diabetes,1,0,1,0,0
+Asthma,0,0,1,1,0
+Asthma,1,0,1,1,0
+Asthma,0,0,0,1,0
+Influenza,0,0,0,0,0
+Pneumonia,0,1,0,0,1
+Influenza,1,1,0,1,0
+Influenza,0,1,1,1,0
+Pneumonia,1,1,1,0,0
+Coronary Artery Disease,1,0,0,1,1
+Hyperthyroidism,1,0,0,0,1
+Asthma,0,1,0,1,0
+Pneumonia,1,0,1,0,1
+Coronary Artery Disease,1,0,0,1,0
+Asthma,0,1,1,0,1
+Pneumonia,1,0,1,0,1
+Pneumonia,1,1,1,0,0
+Influenza,1,1,0,0,0
+Influenza,0,0,0,0,0
+Pneumonia,1,1,1,1,0
+Hyperthyroidism,1,0,0,1,1
+Pneumonia,1,0,0,0,1
+Hyperthyroidism,1,1,0,0,1
+Influenza,0,1,0,0,1
+Diabetes,0,0,0,0,1
+Influenza,0,0,0,0,1
+Hyperthyroidism,0,0,0,1,1
+Asthma,0,0,0,1,1
+Asthma,0,1,1,0,0
+Diabetes,1,0,0,0,1
+Diabetes,1,0,0,0,1
+Asthma,1,1,0,0,1
+Asthma,0,1,1,1,1
+COVID-19,0,0,0,0,1
+Pneumonia,0,0,1,1,0
+Asthma,0,1,0,0,1
+Pneumonia,0,1,0,0,0
+COVID-19,1,1,0,1,1
+Coronary Artery Disease,0,1,0,1,0
+Pneumonia,0,1,1,0,0
+Diabetes,1,1,1,0,1
+COVID-19,0,0,0,0,1
+Pneumonia,0,1,0,1,0
+Asthma,0,0,1,0,0
+Asthma,0,1,1,0,1
+Hyperthyroidism,0,1,0,0,1
+Asthma,0,1,0,1,1
+Pneumonia,1,1,0,1,1
+Coronary Artery Disease,0,0,1,0,0
+Coronary Artery Disease,0,0,0,1,1
+Hyperthyroidism,1,0,0,1,1
+Influenza,1,0,1,0,0
+COVID-19,1,0,1,1,0
+Diabetes,0,1,0,0,0
+COVID-19,0,0,0,1,0
+Coronary Artery Disease,0,1,1,0,0
+Influenza,1,1,1,1,1
+Pneumonia,0,0,0,0,1
+Hyperthyroidism,0,0,0,1,1
+Coronary Artery Disease,0,0,0,1,0
+COVID-19,1,1,0,0,1
+Coronary Artery Disease,0,0,1,1,0
+Pneumonia,1,0,1,1,0
+Coronary Artery Disease,1,0,1,0,1
+Asthma,1,0,1,1,0
+Pneumonia,1,0,1,1,1
+Coronary Artery Disease,0,0,0,0,1
+Influenza,1,0,1,1,1
+Hyperthyroidism,1,0,1,1,0
+Asthma,0,0,0,1,0
+COVID-19,0,0,1,0,0
+Hyperthyroidism,0,1,1,1,0
+Diabetes,0,1,1,1,1
+Pneumonia,0,0,1,1,0
+Pneumonia,1,0,1,1,1
+Pneumonia,1,1,1,0,1
+Pneumonia,0,0,0,0,0
+Coronary Artery Disease,0,0,1,0,1
+Influenza,1,1,0,1,1
+Hyperthyroidism,0,1,1,1,0
+Diabetes,1,1,1,1,0
+COVID-19,0,1,1,1,1
+Hyperthyroidism,0,1,1,1,0
+Coronary Artery Disease,0,1,0,0,1
+Diabetes,1,1,1,1,1
+Diabetes,1,1,0,0,0
+Diabetes,0,1,1,1,0
+Pneumonia,0,0,1,1,0
+COVID-19,1,1,1,1,0
+Coronary Artery Disease,0,0,0,0,1
+Asthma,1,0,0,0,1
+Coronary Artery Disease,0,1,0,0,0
+Coronary Artery Disease,1,0,1,0,0
+Diabetes,0,0,1,0,1
+Coronary Artery Disease,0,0,1,0,0
+Diabetes,1,0,0,1,0
+Asthma,1,0,0,1,0
+Coronary Artery Disease,1,0,1,0,1
+Asthma,0,0,0,0,1
+Influenza,1,0,1,0,0
+Influenza,1,1,0,1,0
+Coronary Artery Disease,0,1,1,1,1
+Asthma,1,1,0,0,1
+Asthma,0,1,0,1,0
+Influenza,0,1,1,1,0
+Influenza,0,0,1,0,0
+Diabetes,0,1,0,1,0
+Asthma,1,1,1,1,0
+Diabetes,1,0,1,1,0
+Asthma,1,1,1,0,1
+Influenza,0,1,0,1,0
+Asthma,0,0,0,0,0
+Diabetes,1,1,0,1,1
+Influenza,1,1,0,1,0
+Hyperthyroidism,0,0,1,1,0
+Hyperthyroidism,1,0,1,0,1
+Diabetes,1,0,1,0,1
+Coronary Artery Disease,0,0,0,1,1
+COVID-19,1,1,0,0,1
+Asthma,1,0,1,1,0
+COVID-19,1,0,0,0,0
+Asthma,1,1,1,0,0
+Asthma,0,0,0,0,1
+COVID-19,0,1,1,1,1
+Influenza,1,1,0,1,1
+Coronary Artery Disease,0,1,1,0,0
+Influenza,1,1,0,0,0
+Hyperthyroidism,1,1,0,1,1
+Influenza,1,1,1,0,0
+Pneumonia,0,1,1,1,1
+Pneumonia,1,0,1,0,0
+COVID-19,0,0,1,1,1
+Asthma,1,0,0,1,1
+Coronary Artery Disease,0,1,1,0,0
+Hyperthyroidism,1,0,0,1,0
+Hyperthyroidism,1,0,1,0,1
+Asthma,1,1,0,1,0
+Influenza,1,1,1,0,1
+Pneumonia,1,1,1,0,0
+COVID-19,0,0,0,0,0
+Coronary Artery Disease,0,1,0,1,0
+Hyperthyroidism,1,1,1,0,1
+Coronary Artery Disease,0,0,1,1,0
+Diabetes,0,0,0,1,1
+Influenza,1,0,0,0,1
+Diabetes,1,0,1,0,1
+Pneumonia,0,0,1,0,0
+COVID-19,0,0,0,1,1
+Hyperthyroidism,0,1,1,1,1
+COVID-19,0,0,0,1,0
+Coronary Artery Disease,0,0,0,0,0
+Pneumonia,1,0,0,0,1
+Influenza,0,1,1,1,1
+Influenza,1,0,0,0,1
+Pneumonia,0,0,1,0,1
+Asthma,1,0,1,0,1
+Influenza,0,1,0,0,1
+COVID-19,0,1,1,0,1
+Influenza,1,0,0,1,1
+COVID-19,0,0,0,0,1
+Diabetes,0,1,0,0,1
+Hyperthyroidism,0,0,1,0,0
+Coronary Artery Disease,0,1,1,1,0
+Diabetes,1,1,0,0,1
+Hyperthyroidism,1,0,0,0,0
+COVID-19,0,1,0,1,0
+Hyperthyroidism,1,0,0,0,0
+Asthma,0,0,0,1,1
+Pneumonia,0,0,0,1,0
+Asthma,1,1,0,1,0
+Hyperthyroidism,1,1,0,0,1
+Asthma,0,1,0,1,0
+Diabetes,1,1,1,0,1
+Diabetes,0,0,1,1,1
+COVID-19,0,0,1,0,1
+Pneumonia,0,1,1,0,0
+COVID-19,0,1,0,0,0
+Diabetes,1,1,1,1,0
+Asthma,0,0,1,1,0
+Pneumonia,1,0,1,1,1
+Pneumonia,0,0,0,1,0
+Hyperthyroidism,1,0,1,0,1
+Influenza,1,0,0,1,1
+Coronary Artery Disease,1,1,0,0,1
+Hyperthyroidism,1,1,1,0,1
+Hyperthyroidism,0,0,0,1,0
+Coronary Artery Disease,0,1,0,1,0
+Coronary Artery Disease,0,0,0,0,1
+Influenza,1,0,0,0,1
+Diabetes,1,0,0,1,1
+Asthma,1,1,0,1,1
+Coronary Artery Disease,1,0,1,0,0
+COVID-19,0,0,1,0,0
+Diabetes,1,1,1,0,1
+Influenza,1,0,1,1,1
+Hyperthyroidism,0,1,1,0,0
+Asthma,1,0,1,1,0
+Coronary Artery Disease,1,1,0,1,0
