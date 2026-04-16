@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 30% 20%;
+  
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 222 30% 20%;
+  
+  --accent: 210 40% 96%;
+  --accent-foreground: 222 30% 20%;
+  
+  --border: 214 32% 91%;
+  --ring: 199 89% 48%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
