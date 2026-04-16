@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Conda environments (if created inside project)
+env/
+venv/
+.conda/
+
+# OS files
+.DS_Store
+Thumbs.dbMiniconda3-latest-Windows-x86_64.exe
