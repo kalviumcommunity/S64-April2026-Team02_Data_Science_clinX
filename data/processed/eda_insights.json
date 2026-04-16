@@ -1,0 +1,99 @@
+{
+    "top_symptoms": {
+        "fatigue": 734,
+        "nausea": 720,
+        "shortness of breath": 719,
+        "body ache": 717,
+        "cough": 709,
+        "headache": 707,
+        "fever": 704
+    },
+    "disease_by_gender": {
+        "Female": {
+            "Anxiety": 61,
+            "COVID-19": 57,
+            "Diabetes": 79,
+            "Influenza": 75,
+            "Migraine": 57
+        },
+        "Male": {
+            "Anxiety": 54,
+            "COVID-19": 73,
+            "Diabetes": 73,
+            "Influenza": 77,
+            "Migraine": 61
+        },
+        "Other": {
+            "Anxiety": 76,
+            "COVID-19": 57,
+            "Diabetes": 63,
+            "Influenza": 76,
+            "Migraine": 61
+        }
+    },
+    "monthly_outbreak_trends": {
+        "April": 2344,
+        "August": 2248,
+        "December": 1400,
+        "February": 2212,
+        "January": 2391,
+        "July": 2445,
+        "June": 2285,
+        "March": 2448,
+        "May": 2496,
+        "November": 1355,
+        "October": 1607,
+        "September": 2120
+    },
+    "disease_symptom_map": {
+        "Pneumonia": [
+            "symptom_fever",
+            "symptom_cough",
+            "symptom_shortness_of_breath",
+            "symptom_headache",
+            "symptom_fatigue"
+        ],
+        "Asthma": [
+            "symptom_shortness_of_breath",
+            "symptom_fatigue",
+            "symptom_headache",
+            "symptom_fever",
+            "symptom_cough"
+        ],
+        "Influenza": [
+            "symptom_headache",
+            "symptom_cough",
+            "symptom_shortness_of_breath",
+            "symptom_fever",
+            "symptom_fatigue"
+        ],
+        "Diabetes": [
+            "symptom_cough",
+            "symptom_fever",
+            "symptom_fatigue",
+            "symptom_shortness_of_breath",
+            "symptom_headache"
+        ],
+        "Coronary Artery Disease": [
+            "symptom_shortness_of_breath",
+            "symptom_headache",
+            "symptom_cough",
+            "symptom_fever",
+            "symptom_fatigue"
+        ],
+        "Hyperthyroidism": [
+            "symptom_fatigue",
+            "symptom_headache",
+            "symptom_cough",
+            "symptom_fever",
+            "symptom_shortness_of_breath"
+        ],
+        "COVID-19": [
+            "symptom_fever",
+            "symptom_fatigue",
+            "symptom_headache",
+            "symptom_cough",
+            "symptom_shortness_of_breath"
+        ]
+    }
+}

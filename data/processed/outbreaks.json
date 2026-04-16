@@ -1,0 +1,222 @@
+[
+    {
+        "Age": 37,
+        "Gender": "Female",
+        "Location": "Urban",
+        "SES": "Low",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 46,
+        "Transmission_Rate": 1.9405867360758016,
+        "Date": "2025-09-23 00:00:00"
+    },
+    {
+        "Age": 16,
+        "Gender": "Male",
+        "Location": "Other",
+        "SES": "Low",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 35,
+        "Transmission_Rate": 2.5571494030159823,
+        "Date": "2025-09-22 00:00:00"
+    },
+    {
+        "Age": 36,
+        "Gender": "Male",
+        "Location": "Urban",
+        "SES": "Medium",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 1,
+        "Daily_New_Cases": 23,
+        "Transmission_Rate": 2.006140228926813,
+        "Date": "2025-09-20 00:00:00"
+    },
+    {
+        "Age": 54,
+        "Gender": "Male",
+        "Location": "Urban",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 1,
+        "Daily_New_Cases": 39,
+        "Transmission_Rate": 2.2364256120720087,
+        "Date": "2025-09-16 00:00:00"
+    },
+    {
+        "Age": 64,
+        "Gender": "Female",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 45,
+        "Transmission_Rate": 0.6383285228863464,
+        "Date": "2025-09-15 00:00:00"
+    },
+    {
+        "Age": 32,
+        "Gender": "Female",
+        "Location": "Urban",
+        "SES": "High",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 30,
+        "Transmission_Rate": 2.524121658829824,
+        "Date": "2025-09-14 00:00:00"
+    },
+    {
+        "Age": 28,
+        "Gender": "Male",
+        "Location": "Other",
+        "SES": "Low",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 1,
+        "Daily_New_Cases": 30,
+        "Transmission_Rate": 2.477653647503251,
+        "Date": "2025-09-13 00:00:00"
+    },
+    {
+        "Age": 84,
+        "Gender": "Male",
+        "Location": "Other",
+        "SES": "Low",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 42,
+        "Transmission_Rate": 1.3985092034701034,
+        "Date": "2025-09-12 00:00:00"
+    },
+    {
+        "Age": 33,
+        "Gender": "Female",
+        "Location": "Urban",
+        "SES": "High",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 7,
+        "Transmission_Rate": 2.9793541529572414,
+        "Date": "2025-09-11 00:00:00"
+    },
+    {
+        "Age": 66,
+        "Gender": "Male",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 1,
+        "Daily_New_Cases": 12,
+        "Transmission_Rate": 2.7769908144048525,
+        "Date": "2025-09-09 00:00:00"
+    },
+    {
+        "Age": 94,
+        "Gender": "Female",
+        "Location": "Urban",
+        "SES": "Low",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 39,
+        "Transmission_Rate": 2.275178894077498,
+        "Date": "2025-09-06 00:00:00"
+    },
+    {
+        "Age": 9,
+        "Gender": "Male",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 33,
+        "Transmission_Rate": 2.8025664208634566,
+        "Date": "2025-09-02 00:00:00"
+    },
+    {
+        "Age": 8,
+        "Gender": "Female",
+        "Location": "Other",
+        "SES": "Low",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 21,
+        "Transmission_Rate": 2.336760907266077,
+        "Date": "2025-09-01 00:00:00"
+    },
+    {
+        "Age": 14,
+        "Gender": "Male",
+        "Location": "Rural",
+        "SES": "Medium",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 46,
+        "Transmission_Rate": 1.7144217581139436,
+        "Date": "2025-08-31 00:00:00"
+    },
+    {
+        "Age": 42,
+        "Gender": "Female",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 48,
+        "Transmission_Rate": 1.0212377871344755,
+        "Date": "2025-08-30 00:00:00"
+    },
+    {
+        "Age": 19,
+        "Gender": "Female",
+        "Location": "Rural",
+        "SES": "Low",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 39,
+        "Transmission_Rate": 2.331208022857847,
+        "Date": "2025-08-27 00:00:00"
+    },
+    {
+        "Age": 32,
+        "Gender": "Male",
+        "Location": "Urban",
+        "SES": "Low",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 1,
+        "Daily_New_Cases": 23,
+        "Transmission_Rate": 2.715424469253865,
+        "Date": "2025-08-24 00:00:00"
+    },
+    {
+        "Age": 32,
+        "Gender": "Female",
+        "Location": "Urban",
+        "SES": "Low",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 13,
+        "Transmission_Rate": 2.9002768982384346,
+        "Date": "2025-08-22 00:00:00"
+    },
+    {
+        "Age": 59,
+        "Gender": "Female",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 1,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 26,
+        "Transmission_Rate": 2.9778903482718047,
+        "Date": "2025-08-21 00:00:00"
+    },
+    {
+        "Age": 56,
+        "Gender": "Female",
+        "Location": "Rural",
+        "SES": "High",
+        "Chronic_Conditions": 0,
+        "Vaccination_Status": 0,
+        "Daily_New_Cases": 41,
+        "Transmission_Rate": 2.728852561067661,
+        "Date": "2025-08-20 00:00:00"
+    }
+]

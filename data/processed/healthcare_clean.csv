@@ -1,0 +1,1001 @@
+Patient_ID,Age,Gender,Symptoms,Symptom_Count,Disease
+P00000,49,Other,"nausea, shortness of breath, headache, cough, fatigue, body ache, fever",7,Influenza
+P00001,90,Male,"shortness of breath, fever, body ache, fatigue, nausea, cough",6,Influenza
+P00002,22,Female,"body ache, headache, shortness of breath, fatigue, nausea, fever, cough",7,Influenza
+P00003,46,Male,"fatigue, nausea, fever",3,Diabetes
+P00004,14,Male,"cough, headache, body ache, fatigue, fever",5,Diabetes
+P00005,82,Other,"body ache, shortness of breath, cough",3,Influenza
+P00006,79,Other,"nausea, cough, fever, headache, shortness of breath, fatigue",6,Influenza
+P00007,11,Male,"cough, fever, shortness of breath, nausea",4,Diabetes
+P00008,83,Male,"body ache, fever, headache, nausea",4,Anxiety
+P00009,20,Male,"shortness of breath, body ache, cough",3,Anxiety
+P00010,44,Male,"nausea, body ache, cough, fever, fatigue",5,Diabetes
+P00011,21,Male,"headache, nausea, fever, shortness of breath",4,Diabetes
+P00012,29,Other,"fatigue, cough, nausea, headache",4,Migraine
+P00013,48,Female,"shortness of breath, fever, nausea, fatigue",4,Influenza
+P00014,51,Female,"body ache, nausea, fatigue",3,Migraine
+P00015,6,Female,"body ache, shortness of breath, fatigue, cough, nausea",5,Diabetes
+P00016,3,Male,"shortness of breath, fever, nausea, cough, body ache, headache",6,Migraine
+P00017,28,Other,"nausea, fatigue, fever, shortness of breath, cough",5,COVID-19
+P00018,72,Female,"cough, shortness of breath, headache",3,Influenza
+P00019,77,Male,"cough, fever, body ache, fatigue, shortness of breath, nausea",6,Anxiety
+P00020,43,Male,"cough, fever, shortness of breath, fatigue, body ache, nausea, headache",7,Influenza
+P00021,21,Other,"shortness of breath, nausea, body ache, cough, fatigue, headache",6,Anxiety
+P00022,29,Male,"fever, shortness of breath, body ache, fatigue, cough",5,Influenza
+P00023,13,Female,"fatigue, shortness of breath, fever, headache, cough",5,COVID-19
+P00024,64,Male,"headache, fatigue, cough",3,Anxiety
+P00025,53,Other,"cough, fever, fatigue, headache",4,Diabetes
+P00026,7,Female,"fatigue, cough, shortness of breath, nausea, fever, headache",6,Migraine
+P00027,53,Male,"fever, shortness of breath, headache",3,Anxiety
+P00028,89,Female,"nausea, body ache, headache, fever, fatigue",5,COVID-19
+P00029,12,Other,"headache, nausea, fever, body ache, cough, fatigue, shortness of breath",7,Migraine
+P00030,76,Female,"fever, body ache, fatigue, headache, shortness of breath, cough",6,Anxiety
+P00031,44,Female,"fatigue, shortness of breath, cough, body ache, fever",5,Anxiety
+P00032,21,Female,"fatigue, body ache, cough, shortness of breath, nausea, headache",6,Diabetes
+P00033,7,Other,"nausea, fever, fatigue, shortness of breath, cough",5,COVID-19
+P00034,81,Other,"shortness of breath, body ache, fever, nausea, cough, headache, fatigue",7,Diabetes
+P00035,79,Other,"headache, cough, fever",3,Migraine
+P00036,64,Male,"shortness of breath, nausea, headache, body ache, cough",5,Influenza
+P00037,61,Female,"headache, shortness of breath, fever, body ache, cough, nausea",6,Diabetes
+P00038,23,Other,"shortness of breath, nausea, headache",3,Diabetes
+P00039,81,Female,"fever, cough, body ache, headache, fatigue, nausea, shortness of breath",7,Migraine
+P00040,84,Female,"fatigue, fever, body ache",3,Anxiety
+P00041,48,Male,"cough, fatigue, body ache, headache, fever, nausea, shortness of breath",7,COVID-19
+P00042,62,Female,"headache, fever, body ache, shortness of breath, fatigue, nausea",6,Influenza
+P00043,1,Other,"body ache, nausea, headache, shortness of breath, fatigue",5,Anxiety
+P00044,89,Male,"headache, fatigue, body ache, fever",4,Diabetes
+P00045,48,Other,"shortness of breath, nausea, cough, fatigue",4,COVID-19
+P00046,67,Female,"body ache, fatigue, fever",3,Diabetes
+P00047,51,Other,"cough, body ache, fatigue, headache, shortness of breath, nausea",6,Influenza
+P00048,66,Male,"body ache, fatigue, shortness of breath, nausea, fever",5,Diabetes
+P00049,35,Other,"nausea, headache, shortness of breath",3,Migraine
+P00050,80,Female,"shortness of breath, fever, body ache, fatigue, headache, nausea, cough",7,Migraine
+P00051,60,Male,"nausea, fever, shortness of breath, cough, fatigue, headache",6,Diabetes
+P00052,59,Other,"fatigue, body ache, cough, fever",4,Influenza
+P00053,27,Male,"body ache, headache, fatigue, cough, fever",5,Influenza
+P00054,47,Male,"shortness of breath, fever, fatigue, headache, body ache, cough",6,Diabetes
+P00055,44,Female,"cough, fever, nausea, shortness of breath, fatigue",5,Migraine
+P00056,45,Male,"body ache, shortness of breath, fatigue, fever, headache",5,Migraine
+P00057,61,Other,"shortness of breath, headache, body ache, nausea, fatigue",5,Influenza
+P00058,1,Other,"cough, body ache, fatigue, shortness of breath, nausea, fever",6,COVID-19
+P00059,83,Other,"headache, nausea, shortness of breath, fever",4,Anxiety
+P00060,13,Other,"fever, shortness of breath, cough, nausea",4,COVID-19
+P00061,9,Male,"body ache, fatigue, cough, shortness of breath",4,Anxiety
+P00062,85,Female,"shortness of breath, headache, cough, fever, body ache",5,Migraine
+P00063,80,Other,"headache, nausea, fever, body ache",4,Influenza
+P00064,44,Other,"headache, body ache, cough, shortness of breath, nausea, fatigue",6,Anxiety
+P00065,20,Male,"fatigue, fever, headache, shortness of breath",4,Migraine
+P00066,29,Male,"headache, cough, body ache, fever",4,Diabetes
+P00067,89,Male,"fatigue, shortness of breath, headache, cough, body ache, fever, nausea",7,Migraine
+P00068,36,Male,"headache, shortness of breath, cough, nausea",4,Migraine
+P00069,3,Male,"nausea, shortness of breath, headache, fever, cough, body ache, fatigue",7,Influenza
+P00070,20,Male,"nausea, shortness of breath, cough, headache",4,Influenza
+P00071,45,Female,"body ache, nausea, shortness of breath, fever, fatigue",5,Anxiety
+P00072,59,Male,"body ache, headache, fatigue",3,COVID-19
+P00073,78,Female,"nausea, fatigue, headache, shortness of breath",4,COVID-19
+P00074,84,Other,"headache, fatigue, shortness of breath, fever, nausea",5,Influenza
+P00075,59,Other,"cough, shortness of breath, nausea, fever",4,COVID-19
+P00076,44,Male,"fever, fatigue, nausea",3,Migraine
+P00077,84,Male,"body ache, headache, fatigue, cough, nausea, fever, shortness of breath",7,Anxiety
+P00078,8,Other,"fever, body ache, shortness of breath",3,Migraine
+P00079,86,Male,"shortness of breath, fever, body ache",3,Influenza
+P00080,3,Female,"headache, body ache, fatigue, nausea",4,Diabetes
+P00081,28,Male,"headache, fever, body ache, fatigue, shortness of breath",5,Migraine
+P00082,16,Female,"headache, fatigue, fever, nausea, body ache, shortness of breath, cough",7,Anxiety
+P00083,17,Other,"fever, shortness of breath, nausea",3,Anxiety
+P00084,26,Other,"shortness of breath, fever, fatigue, nausea, cough",5,Migraine
+P00085,89,Female,"headache, body ache, fever, cough, fatigue, nausea, shortness of breath",7,Diabetes
+P00086,13,Male,"shortness of breath, fever, cough, nausea, fatigue",5,Anxiety
+P00087,12,Male,"headache, nausea, cough, body ache, fatigue, shortness of breath",6,COVID-19
+P00088,15,Other,"fatigue, headache, body ache, shortness of breath, nausea, cough, fever",7,Migraine
+P00089,35,Female,"body ache, fever, fatigue, nausea",4,Anxiety
+P00090,39,Female,"fever, cough, headache, nausea, shortness of breath, fatigue, body ache",7,Influenza
+P00091,57,Male,"body ache, fever, fatigue, headache, cough, nausea, shortness of breath",7,Migraine
+P00092,22,Male,"nausea, fatigue, fever, shortness of breath",4,COVID-19
+P00093,74,Male,"cough, shortness of breath, headache",3,COVID-19
+P00094,55,Male,"body ache, cough, fatigue, shortness of breath, headache",5,Diabetes
+P00095,17,Other,"body ache, nausea, shortness of breath, headache, fever",5,Anxiety
+P00096,27,Other,"headache, cough, fatigue",3,COVID-19
+P00097,63,Male,"shortness of breath, cough, headache, fatigue, nausea, fever",6,Diabetes
+P00098,57,Female,"nausea, headache, cough, body ache",4,Diabetes
+P00099,4,Female,"shortness of breath, cough, body ache, nausea, fever, headache",6,Influenza
+P00100,19,Female,"nausea, shortness of breath, body ache",3,Influenza
+P00101,39,Other,"cough, shortness of breath, nausea",3,COVID-19
+P00102,40,Male,"fatigue, nausea, headache",3,Anxiety
+P00103,78,Female,"body ache, headache, cough, shortness of breath, fatigue, fever, nausea",7,Migraine
+P00104,66,Female,"nausea, cough, body ache, headache",4,Diabetes
+P00105,10,Male,"fever, shortness of breath, cough, fatigue",4,Anxiety
+P00106,20,Other,"cough, body ache, headache, fatigue, nausea",5,COVID-19
+P00107,2,Female,"cough, fever, fatigue",3,Anxiety
+P00108,61,Other,"cough, headache, fever, fatigue, nausea, shortness of breath, body ache",7,Anxiety
+P00109,52,Male,"shortness of breath, fatigue, fever",3,Diabetes
+P00110,53,Other,"shortness of breath, nausea, fever, headache, cough, body ache",6,Influenza
+P00111,50,Other,"fatigue, cough, nausea, headache",4,Migraine
+P00112,16,Male,"fever, headache, nausea, cough, body ache",5,Diabetes
+P00113,77,Other,"headache, body ache, shortness of breath, fatigue, fever",5,COVID-19
+P00114,49,Other,"fever, shortness of breath, fatigue, nausea, headache, body ache, cough",7,COVID-19
+P00115,66,Other,"fever, fatigue, cough, nausea, headache, shortness of breath",6,Migraine
+P00116,29,Other,"body ache, fatigue, cough, fever, headache, nausea",6,Influenza
+P00117,24,Female,"nausea, headache, cough, body ache",4,Influenza
+P00118,53,Other,"nausea, shortness of breath, headache, body ache, fever",5,Influenza
+P00119,61,Female,"fatigue, shortness of breath, nausea, headache, fever",5,Diabetes
+P00120,20,Male,"headache, body ache, shortness of breath, nausea, fever",5,Migraine
+P00121,53,Other,"cough, headache, fever",3,Influenza
+P00122,42,Female,"headache, body ache, fatigue, cough, nausea",5,Influenza
+P00123,11,Male,"body ache, nausea, shortness of breath, fatigue",4,Influenza
+P00124,80,Male,"fatigue, shortness of breath, nausea, body ache",4,COVID-19
+P00125,36,Male,"shortness of breath, headache, body ache, fatigue, fever, cough, nausea",7,Anxiety
+P00126,37,Female,"shortness of breath, headache, fatigue, fever, cough",5,Diabetes
+P00127,40,Male,"body ache, headache, fever",3,COVID-19
+P00128,65,Female,"nausea, headache, fever",3,Diabetes
+P00129,13,Female,"headache, shortness of breath, nausea, fatigue, fever",5,Diabetes
+P00130,10,Other,"body ache, fatigue, headache",3,Influenza
+P00131,72,Other,"headache, fever, shortness of breath, nausea, body ache",5,COVID-19
+P00132,20,Other,"nausea, body ache, fever, headache, fatigue",5,Diabetes
+P00133,66,Female,"headache, fatigue, nausea, fever, shortness of breath, cough, body ache",7,Migraine
+P00134,30,Other,"body ache, fever, fatigue, nausea",4,Diabetes
+P00135,65,Male,"fever, body ache, nausea",3,COVID-19
+P00136,81,Female,"nausea, body ache, shortness of breath, fever, headache, fatigue, cough",7,Diabetes
+P00137,12,Other,"fatigue, nausea, body ache",3,Diabetes
+P00138,26,Female,"headache, fever, shortness of breath",3,Anxiety
+P00139,34,Male,"cough, nausea, shortness of breath",3,Diabetes
+P00140,14,Other,"shortness of breath, fever, fatigue, body ache, headache",5,Influenza
+P00141,33,Other,"body ache, fatigue, cough",3,Anxiety
+P00142,1,Other,"headache, fatigue, nausea, body ache, shortness of breath, fever",6,Diabetes
+P00143,35,Female,"nausea, cough, body ache",3,Diabetes
+P00144,75,Male,"fever, nausea, shortness of breath",3,Diabetes
+P00145,79,Other,"shortness of breath, body ache, headache, fatigue, fever, nausea",6,Diabetes
+P00146,60,Other,"body ache, cough, nausea",3,Migraine
+P00147,73,Female,"nausea, fatigue, fever, body ache",4,Influenza
+P00148,25,Female,"fever, fatigue, headache, nausea, cough",5,Influenza
+P00149,79,Female,"nausea, fatigue, body ache, shortness of breath",4,Anxiety
+P00150,39,Male,"headache, fever, cough, nausea, fatigue, shortness of breath, body ache",7,Diabetes
+P00151,39,Male,"body ache, headache, shortness of breath, fever, fatigue",5,Influenza
+P00152,1,Female,"shortness of breath, cough, body ache, fever, fatigue, headache, nausea",7,Migraine
+P00153,3,Male,"shortness of breath, cough, fatigue",3,Anxiety
+P00154,35,Other,"body ache, shortness of breath, nausea, fatigue",4,COVID-19
+P00155,43,Female,"cough, shortness of breath, body ache",3,COVID-19
+P00156,38,Male,"headache, shortness of breath, fever, fatigue, nausea",5,Diabetes
+P00157,19,Male,"headache, fatigue, fever, body ache, cough, nausea",6,Migraine
+P00158,61,Female,"headache, fatigue, cough",3,Anxiety
+P00159,83,Male,"body ache, nausea, fatigue, fever, shortness of breath",5,Influenza
+P00160,50,Male,"nausea, shortness of breath, headache, cough, fatigue",5,Migraine
+P00161,57,Male,"fatigue, cough, shortness of breath, fever, nausea",5,Influenza
+P00162,74,Male,"nausea, cough, fever, body ache, fatigue, shortness of breath, headache",7,COVID-19
+P00163,48,Female,"nausea, headache, shortness of breath, body ache, fatigue, cough",6,COVID-19
+P00164,73,Male,"headache, fever, cough, fatigue, nausea",5,Influenza
+P00165,68,Female,"nausea, fatigue, body ache, shortness of breath, cough",5,Anxiety
+P00166,37,Male,"body ache, headache, cough, fatigue",4,Diabetes
+P00167,13,Other,"nausea, cough, fever, shortness of breath, fatigue, headache",6,Influenza
+P00168,68,Other,"body ache, headache, fatigue, cough, fever, shortness of breath, nausea",7,Anxiety
+P00169,18,Other,"body ache, fever, cough, headache, fatigue, shortness of breath, nausea",7,Anxiety
+P00170,31,Other,"headache, fatigue, shortness of breath, fever, nausea, body ache",6,Diabetes
+P00171,36,Female,"cough, headache, nausea, fatigue",4,Diabetes
+P00172,17,Male,"headache, fever, shortness of breath, cough",4,Diabetes
+P00173,33,Other,"cough, nausea, headache",3,Influenza
+P00174,18,Male,"headache, body ache, fatigue",3,Influenza
+P00175,56,Other,"nausea, fatigue, shortness of breath, cough, body ache, fever",6,Anxiety
+P00176,2,Female,"fever, shortness of breath, nausea, headache, fatigue",5,COVID-19
+P00177,65,Other,"cough, fatigue, fever, nausea, body ache, headache, shortness of breath",7,Diabetes
+P00178,23,Female,"fatigue, headache, fever",3,Migraine
+P00179,71,Other,"body ache, headache, fever",3,Diabetes
+P00180,36,Male,"shortness of breath, fatigue, nausea",3,Anxiety
+P00181,31,Other,"fever, headache, shortness of breath, cough, body ache",5,COVID-19
+P00182,43,Male,"fever, headache, cough",3,COVID-19
+P00183,16,Other,"fever, body ache, fatigue, headache, cough, shortness of breath, nausea",7,COVID-19
+P00184,32,Other,"fatigue, shortness of breath, body ache, headache, cough, nausea, fever",7,Migraine
+P00185,17,Other,"nausea, shortness of breath, headache, cough",4,Anxiety
+P00186,57,Other,"nausea, cough, fatigue, fever, shortness of breath, body ache",6,Anxiety
+P00187,89,Other,"fever, nausea, body ache, cough, fatigue, shortness of breath, headache",7,COVID-19
+P00188,32,Female,"cough, nausea, body ache, fatigue",4,COVID-19
+P00189,15,Female,"headache, cough, shortness of breath",3,Migraine
+P00190,18,Male,"nausea, fatigue, headache, shortness of breath",4,COVID-19
+P00191,36,Male,"cough, headache, fatigue, body ache",4,Influenza
+P00192,42,Female,"nausea, fatigue, fever",3,Migraine
+P00193,10,Other,"fever, shortness of breath, nausea, fatigue",4,Migraine
+P00194,82,Other,"headache, cough, fatigue, body ache, shortness of breath, nausea",6,Influenza
+P00195,29,Male,"cough, body ache, nausea, shortness of breath, fever, headache, fatigue",7,COVID-19
+P00196,88,Other,"headache, shortness of breath, cough, fever, nausea",5,Diabetes
+P00197,82,Female,"nausea, cough, body ache, shortness of breath, fatigue",5,Diabetes
+P00198,81,Male,"body ache, nausea, shortness of breath, fever",4,COVID-19
+P00199,55,Male,"body ache, fatigue, headache, cough, shortness of breath, nausea",6,COVID-19
+P00200,61,Female,"headache, fatigue, fever, body ache, cough, shortness of breath",6,Anxiety
+P00201,18,Male,"body ache, fatigue, cough, shortness of breath",4,Diabetes
+P00202,72,Female,"body ache, shortness of breath, fatigue",3,Influenza
+P00203,25,Female,"body ache, headache, shortness of breath, cough, fatigue, nausea, fever",7,COVID-19
+P00204,5,Male,"nausea, shortness of breath, body ache, cough, fatigue",5,COVID-19
+P00205,83,Male,"shortness of breath, body ache, fatigue, cough, fever, headache, nausea",7,Influenza
+P00206,15,Other,"cough, shortness of breath, body ache, fever, headache, fatigue",6,COVID-19
+P00207,38,Female,"nausea, cough, fever",3,Migraine
+P00208,4,Female,"nausea, body ache, headache",3,Diabetes
+P00209,32,Female,"nausea, fatigue, fever, body ache, headache, shortness of breath",6,Influenza
+P00210,61,Male,"nausea, shortness of breath, fever, cough, headache",5,Migraine
+P00211,71,Male,"headache, fatigue, cough, nausea, fever, body ache",6,COVID-19
+P00212,29,Male,"fatigue, body ache, nausea, fever, shortness of breath, cough",6,Influenza
+P00213,67,Other,"body ache, fever, shortness of breath",3,Diabetes
+P00214,29,Other,"headache, body ache, nausea, fever, shortness of breath",5,Migraine
+P00215,30,Other,"cough, headache, nausea, body ache, shortness of breath, fatigue",6,Influenza
+P00216,54,Other,"cough, nausea, fatigue, headache, fever, body ache",6,Anxiety
+P00217,90,Female,"fever, nausea, fatigue",3,Anxiety
+P00218,40,Male,"nausea, body ache, cough, headache, fever, fatigue",6,Influenza
+P00219,26,Male,"cough, fever, shortness of breath, body ache",4,Influenza
+P00220,48,Female,"fever, cough, nausea, body ache, shortness of breath, headache, fatigue",7,Diabetes
+P00221,43,Female,"fever, headache, nausea, body ache",4,COVID-19
+P00222,43,Male,"body ache, shortness of breath, nausea, fatigue, headache",5,Diabetes
+P00223,48,Other,"cough, nausea, fever",3,Migraine
+P00224,6,Male,"shortness of breath, cough, fever, fatigue, headache, body ache, nausea",7,Influenza
+P00225,33,Male,"fatigue, cough, headache, fever, body ache, nausea, shortness of breath",7,Diabetes
+P00226,26,Other,"cough, shortness of breath, headache, nausea",4,Migraine
+P00227,5,Female,"shortness of breath, headache, body ache, fatigue, nausea, fever",6,COVID-19
+P00228,72,Other,"fatigue, nausea, body ache, shortness of breath, headache, cough, fever",7,Migraine
+P00229,56,Male,"body ache, shortness of breath, fever",3,Influenza
+P00230,84,Female,"body ache, fever, nausea, cough, fatigue, headache",6,Influenza
+P00231,85,Female,"nausea, fatigue, shortness of breath, fever",4,Anxiety
+P00232,8,Male,"shortness of breath, nausea, cough, headache",4,Migraine
+P00233,65,Other,"cough, headache, nausea",3,Influenza
+P00234,31,Other,"nausea, cough, body ache, headache, shortness of breath, fatigue, fever",7,COVID-19
+P00235,63,Other,"fever, cough, headache, nausea, body ache, fatigue, shortness of breath",7,Diabetes
+P00236,75,Female,"fatigue, nausea, headache",3,Influenza
+P00237,8,Male,"body ache, fever, nausea",3,Influenza
+P00238,28,Female,"fatigue, fever, nausea, headache, shortness of breath, body ache, cough",7,Migraine
+P00239,47,Female,"cough, body ache, shortness of breath, fatigue, nausea, fever, headache",7,Influenza
+P00240,22,Other,"fever, shortness of breath, headache, fatigue, body ache, cough, nausea",7,Diabetes
+P00241,34,Other,"shortness of breath, headache, fatigue",3,COVID-19
+P00242,59,Male,"fever, shortness of breath, cough, body ache",4,Diabetes
+P00243,53,Female,"fatigue, shortness of breath, fever, headache, cough, body ache, nausea",7,Migraine
+P00244,88,Other,"fever, shortness of breath, fatigue, headache, cough, nausea, body ache",7,Anxiety
+P00245,37,Other,"cough, fever, shortness of breath, fatigue, headache, body ache",6,Anxiety
+P00246,20,Female,"headache, fatigue, shortness of breath, cough, nausea, body ache",6,Migraine
+P00247,23,Male,"fatigue, body ache, nausea, shortness of breath, headache",5,Influenza
+P00248,86,Female,"cough, nausea, fever, shortness of breath, fatigue",5,COVID-19
+P00249,37,Female,"nausea, fatigue, cough, shortness of breath, fever, headache, body ache",7,Influenza
+P00250,34,Female,"fever, shortness of breath, fatigue, headache, body ache, nausea, cough",7,Diabetes
+P00251,12,Male,"shortness of breath, nausea, headache, cough, body ache, fatigue, fever",7,COVID-19
+P00252,54,Female,"nausea, headache, fever, shortness of breath, body ache, cough, fatigue",7,COVID-19
+P00253,72,Other,"body ache, shortness of breath, headache, cough",4,Influenza
+P00254,79,Female,"fever, cough, headache, fatigue",4,Migraine
+P00255,41,Female,"nausea, shortness of breath, cough, fever, headache",5,COVID-19
+P00256,9,Other,"fever, shortness of breath, nausea, body ache",4,Influenza
+P00257,27,Other,"fever, shortness of breath, fatigue, body ache",4,Migraine
+P00258,83,Female,"shortness of breath, headache, fever, fatigue, body ache, nausea, cough",7,Influenza
+P00259,48,Other,"nausea, shortness of breath, fatigue, headache",4,COVID-19
+P00260,65,Other,"nausea, headache, cough, body ache",4,Influenza
+P00261,33,Male,"cough, fever, shortness of breath, body ache, headache, fatigue, nausea",7,Migraine
+P00262,73,Female,"headache, body ache, nausea",3,COVID-19
+P00263,26,Female,"headache, fatigue, body ache, fever, cough, shortness of breath",6,Diabetes
+P00264,23,Male,"fatigue, shortness of breath, cough",3,Anxiety
+P00265,54,Male,"headache, fever, fatigue, body ache, cough, shortness of breath, nausea",7,COVID-19
+P00266,3,Other,"nausea, shortness of breath, cough",3,Migraine
+P00267,17,Other,"headache, fever, body ache, cough, nausea",5,Anxiety
+P00268,87,Male,"fever, nausea, body ache, cough",4,Influenza
+P00269,62,Male,"nausea, body ache, shortness of breath, fever, headache, cough, fatigue",7,Influenza
+P00270,60,Female,"fatigue, body ache, headache, cough, nausea",5,Diabetes
+P00271,57,Other,"fever, body ache, cough",3,COVID-19
+P00272,5,Male,"fever, nausea, body ache, fatigue, cough, shortness of breath",6,Influenza
+P00273,86,Other,"nausea, cough, fatigue, headache",4,Diabetes
+P00274,68,Female,"headache, fatigue, cough",3,Migraine
+P00275,5,Other,"cough, body ache, fatigue",3,Migraine
+P00276,24,Other,"cough, headache, fatigue",3,Migraine
+P00277,58,Male,"fever, headache, shortness of breath, cough, body ache, nausea",6,COVID-19
+P00278,56,Female,"shortness of breath, fatigue, nausea, headache, cough, body ache",6,Migraine
+P00279,74,Male,"fatigue, fever, cough, nausea, shortness of breath, headache, body ache",7,Diabetes
+P00280,47,Male,"cough, headache, body ache, shortness of breath",4,COVID-19
+P00281,82,Other,"headache, body ache, fatigue, cough, shortness of breath, nausea, fever",7,Anxiety
+P00282,45,Male,"fatigue, fever, body ache, shortness of breath",4,COVID-19
+P00283,18,Other,"nausea, headache, shortness of breath, cough, fatigue",5,Migraine
+P00284,11,Female,"body ache, nausea, fever, shortness of breath, fatigue",5,Influenza
+P00285,53,Female,"shortness of breath, body ache, nausea, fatigue, headache",5,Anxiety
+P00286,6,Male,"cough, shortness of breath, fever, body ache, nausea, headache",6,Influenza
+P00287,63,Female,"cough, fatigue, shortness of breath",3,Diabetes
+P00288,83,Other,"body ache, nausea, shortness of breath, headache, cough, fatigue",6,Influenza
+P00289,70,Other,"headache, cough, body ache, fever",4,Migraine
+P00290,21,Male,"fever, nausea, headache, shortness of breath, cough, fatigue",6,Influenza
+P00291,88,Female,"shortness of breath, cough, nausea",3,COVID-19
+P00292,32,Male,"shortness of breath, body ache, fever, nausea",4,Anxiety
+P00293,23,Other,"shortness of breath, body ache, fatigue, nausea, cough, headache, fever",7,COVID-19
+P00294,32,Other,"nausea, cough, shortness of breath, fatigue",4,Diabetes
+P00295,52,Female,"cough, body ache, headache, nausea, shortness of breath, fever",6,Migraine
+P00296,46,Female,"fever, nausea, body ache, fatigue",4,Influenza
+P00297,7,Male,"fatigue, cough, shortness of breath, nausea, body ache, headache",6,Influenza
+P00298,36,Female,"nausea, shortness of breath, cough, body ache, headache, fatigue",6,Diabetes
+P00299,52,Female,"cough, headache, nausea, body ache, fatigue, shortness of breath",6,COVID-19
+P00300,54,Female,"headache, cough, fever, body ache, shortness of breath, nausea, fatigue",7,Anxiety
+P00301,20,Male,"nausea, cough, shortness of breath, headache, fever, body ache",6,COVID-19
+P00302,69,Female,"nausea, cough, fever, headache, fatigue, body ache, shortness of breath",7,Influenza
+P00303,24,Other,"body ache, fatigue, headache, cough, shortness of breath, fever",6,Migraine
+P00304,70,Female,"nausea, body ache, fatigue, shortness of breath",4,Diabetes
+P00305,32,Male,"headache, cough, fatigue, body ache, nausea",5,Influenza
+P00306,69,Male,"shortness of breath, fatigue, body ache, fever, nausea, headache",6,Anxiety
+P00307,34,Female,"fatigue, cough, shortness of breath, fever, body ache, nausea",6,COVID-19
+P00308,1,Other,"body ache, cough, fever, headache, fatigue",5,Anxiety
+P00309,69,Female,"headache, shortness of breath, nausea",3,Anxiety
+P00310,86,Female,"shortness of breath, nausea, fatigue, cough",4,Migraine
+P00311,35,Other,"nausea, headache, fever, shortness of breath, cough, body ache, fatigue",7,Diabetes
+P00312,47,Female,"fatigue, fever, body ache",3,COVID-19
+P00313,8,Female,"nausea, body ache, fatigue, cough, fever, headache",6,Diabetes
+P00314,64,Other,"fever, fatigue, body ache, headache, nausea, shortness of breath, cough",7,Influenza
+P00315,60,Other,"fever, shortness of breath, cough, headache",4,Migraine
+P00316,76,Other,"nausea, cough, body ache, headache, fatigue, fever, shortness of breath",7,Influenza
+P00317,31,Male,"shortness of breath, headache, nausea, cough",4,Anxiety
+P00318,10,Female,"fatigue, headache, fever",3,Influenza
+P00319,81,Male,"fever, cough, shortness of breath, body ache, fatigue",5,Influenza
+P00320,37,Female,"shortness of breath, nausea, fever",3,Migraine
+P00321,3,Female,"shortness of breath, fever, cough",3,Diabetes
+P00322,24,Other,"cough, body ache, nausea, headache, fever, fatigue, shortness of breath",7,Anxiety
+P00323,5,Male,"fatigue, nausea, cough, shortness of breath, headache, body ache",6,Anxiety
+P00324,82,Other,"nausea, cough, shortness of breath, body ache, fever, headache",6,Anxiety
+P00325,51,Male,"headache, fatigue, cough, nausea, body ache",5,Influenza
+P00326,38,Male,"fatigue, cough, nausea",3,COVID-19
+P00327,31,Female,"cough, fatigue, headache, body ache, shortness of breath, nausea",6,COVID-19
+P00328,20,Female,"fever, headache, body ache, fatigue, shortness of breath",5,Influenza
+P00329,37,Other,"cough, headache, fever, nausea, body ache, fatigue",6,Diabetes
+P00330,8,Male,"nausea, shortness of breath, fatigue, body ache, headache, cough",6,Migraine
+P00331,70,Female,"fever, cough, shortness of breath, body ache, headache, fatigue",6,Anxiety
+P00332,40,Other,"cough, body ache, fatigue, fever, nausea",5,Anxiety
+P00333,38,Other,"body ache, fatigue, fever, cough, headache",5,Influenza
+P00334,70,Female,"fatigue, body ache, cough, shortness of breath, fever",5,COVID-19
+P00335,29,Male,"cough, fever, headache, nausea, fatigue, body ache, shortness of breath",7,Influenza
+P00336,81,Female,"fatigue, shortness of breath, body ache, cough, nausea, headache",6,Anxiety
+P00337,31,Female,"cough, fatigue, headache, nausea, shortness of breath, body ache",6,Diabetes
+P00338,50,Female,"cough, body ache, nausea",3,Diabetes
+P00339,51,Female,"headache, shortness of breath, body ache",3,Migraine
+P00340,14,Female,"fatigue, headache, fever, body ache",4,Migraine
+P00341,21,Other,"cough, body ache, shortness of breath, fatigue, headache, nausea",6,Anxiety
+P00342,37,Female,"headache, cough, nausea, body ache, shortness of breath",5,Migraine
+P00343,85,Other,"fever, cough, shortness of breath, fatigue",4,Migraine
+P00344,47,Other,"fever, headache, shortness of breath",3,COVID-19
+P00345,31,Male,"fatigue, shortness of breath, body ache",3,Anxiety
+P00346,14,Female,"nausea, shortness of breath, fever, headache, cough, body ache, fatigue",7,Influenza
+P00347,12,Male,"headache, fever, body ache, cough, nausea, shortness of breath",6,Influenza
+P00348,47,Male,"cough, shortness of breath, fatigue",3,Influenza
+P00349,50,Other,"body ache, fatigue, nausea, shortness of breath, fever",5,Anxiety
+P00350,26,Female,"nausea, cough, shortness of breath, fatigue, body ache, headache",6,Anxiety
+P00351,37,Female,"shortness of breath, headache, body ache, fever",4,Diabetes
+P00352,49,Male,"nausea, fatigue, shortness of breath, body ache, cough, fever, headache",7,Influenza
+P00353,59,Male,"headache, body ache, cough, shortness of breath, fatigue",5,Migraine
+P00354,43,Female,"headache, cough, body ache, shortness of breath, fatigue, nausea, fever",7,Migraine
+P00355,63,Female,"nausea, body ache, shortness of breath, cough, fatigue",5,Migraine
+P00356,45,Male,"shortness of breath, cough, fatigue, body ache, fever",5,Migraine
+P00357,32,Other,"headache, nausea, shortness of breath, fever",4,Anxiety
+P00358,58,Male,"body ache, cough, fatigue",3,Anxiety
+P00359,18,Female,"cough, body ache, shortness of breath, fatigue",4,Anxiety
+P00360,37,Female,"body ache, shortness of breath, cough, fatigue",4,Influenza
+P00361,71,Other,"body ache, headache, fatigue, nausea",4,Migraine
+P00362,79,Male,"headache, fever, shortness of breath, cough, body ache, nausea",6,Influenza
+P00363,81,Female,"body ache, nausea, cough, fever",4,Migraine
+P00364,31,Female,"fever, cough, body ache, fatigue, nausea",5,COVID-19
+P00365,28,Female,"headache, shortness of breath, body ache, fatigue, fever",5,COVID-19
+P00366,11,Other,"cough, fever, headache",3,COVID-19
+P00367,27,Other,"headache, nausea, shortness of breath, fever",4,Influenza
+P00368,86,Female,"shortness of breath, body ache, fatigue",3,Influenza
+P00369,16,Male,"cough, shortness of breath, headache, fever",4,Anxiety
+P00370,19,Male,"fever, headache, fatigue, cough",4,Migraine
+P00371,21,Other,"headache, shortness of breath, body ache",3,Anxiety
+P00372,14,Male,"fatigue, shortness of breath, body ache",3,COVID-19
+P00373,36,Other,"body ache, nausea, shortness of breath, headache, fever, fatigue",6,Migraine
+P00374,36,Female,"fever, cough, nausea, fatigue, shortness of breath, body ache",6,Diabetes
+P00375,10,Female,"fever, shortness of breath, fatigue",3,Diabetes
+P00376,8,Other,"body ache, fatigue, headache, cough, fever, nausea, shortness of breath",7,COVID-19
+P00377,25,Other,"nausea, fatigue, shortness of breath, cough, body ache",5,COVID-19
+P00378,11,Female,"body ache, shortness of breath, fatigue, fever, cough, headache",6,Influenza
+P00379,67,Female,"nausea, fever, body ache, headache",4,COVID-19
+P00380,16,Male,"body ache, fever, shortness of breath",3,Migraine
+P00381,9,Female,"fatigue, body ache, shortness of breath, headache",4,Influenza
+P00382,25,Female,"body ache, cough, nausea, fever, headache",5,Influenza
+P00383,59,Female,"fever, fatigue, shortness of breath, cough",4,Migraine
+P00384,22,Other,"nausea, cough, headache, fatigue",4,Anxiety
+P00385,45,Female,"cough, nausea, headache, fever",4,Influenza
+P00386,2,Female,"fatigue, shortness of breath, nausea, headache, body ache, fever, cough",7,Diabetes
+P00387,13,Other,"headache, fever, nausea",3,Influenza
+P00388,41,Female,"nausea, fever, fatigue",3,Influenza
+P00389,43,Male,"headache, nausea, cough, fever, body ache, shortness of breath",6,COVID-19
+P00390,83,Female,"fever, shortness of breath, cough, fatigue, nausea, headache",6,Influenza
+P00391,62,Other,"fever, cough, headache, fatigue, body ache, nausea, shortness of breath",7,Migraine
+P00392,1,Female,"headache, shortness of breath, fatigue",3,Diabetes
+P00393,58,Female,"nausea, cough, shortness of breath, body ache, fatigue",5,Influenza
+P00394,80,Male,"headache, body ache, fever, fatigue, nausea, shortness of breath",6,Migraine
+P00395,37,Male,"fever, headache, body ache",3,COVID-19
+P00396,46,Female,"nausea, fever, headache, fatigue, shortness of breath, cough",6,Diabetes
+P00397,80,Other,"nausea, fatigue, shortness of breath, fever, cough, headache, body ache",7,Anxiety
+P00398,31,Male,"fever, shortness of breath, headache, body ache, nausea, fatigue, cough",7,Influenza
+P00399,39,Female,"body ache, cough, fever, nausea",4,Diabetes
+P00400,56,Male,"fatigue, nausea, cough, body ache, fever",5,Anxiety
+P00401,88,Male,"fever, headache, nausea, shortness of breath",4,Diabetes
+P00402,54,Male,"headache, body ache, fatigue, fever, shortness of breath, cough",6,Anxiety
+P00403,74,Female,"fatigue, body ache, cough",3,Migraine
+P00404,52,Other,"cough, headache, fatigue, nausea",4,Migraine
+P00405,70,Other,"nausea, body ache, headache, fever",4,Anxiety
+P00406,4,Female,"body ache, cough, headache, fever, nausea, fatigue, shortness of breath",7,Diabetes
+P00407,64,Other,"headache, shortness of breath, body ache, fatigue, nausea",5,Influenza
+P00408,30,Male,"shortness of breath, fever, headache, cough",4,Diabetes
+P00409,27,Other,"fever, nausea, fatigue, body ache, shortness of breath, cough",6,Influenza
+P00410,37,Female,"fever, body ache, fatigue, shortness of breath, cough, headache",6,Influenza
+P00411,84,Other,"cough, headache, fatigue, body ache, fever, shortness of breath",6,Influenza
+P00412,41,Male,"headache, fatigue, fever, shortness of breath, cough",5,COVID-19
+P00413,14,Other,"shortness of breath, cough, nausea, fever",4,Diabetes
+P00414,48,Male,"headache, shortness of breath, nausea, fever, fatigue",5,Diabetes
+P00415,5,Female,"fatigue, body ache, headache, fever, cough, nausea",6,Diabetes
+P00416,71,Female,"body ache, headache, cough",3,COVID-19
+P00417,5,Other,"cough, body ache, fatigue, shortness of breath, headache",5,Influenza
+P00418,39,Female,"shortness of breath, fever, body ache, cough, nausea, fatigue, headache",7,Diabetes
+P00419,34,Male,"headache, nausea, fever, cough, fatigue, shortness of breath, body ache",7,Anxiety
+P00420,69,Female,"cough, body ache, fatigue, fever, headache",5,Migraine
+P00421,55,Female,"shortness of breath, nausea, fatigue, headache, cough",5,Diabetes
+P00422,52,Female,"body ache, fever, nausea, fatigue, headache",5,Diabetes
+P00423,73,Female,"headache, fever, body ache",3,Migraine
+P00424,63,Male,"fatigue, body ache, headache, shortness of breath, cough",5,Influenza
+P00425,86,Other,"cough, fever, fatigue, body ache, shortness of breath, nausea, headache",7,COVID-19
+P00426,82,Male,"fatigue, headache, fever, body ache, nausea, shortness of breath",6,Influenza
+P00427,60,Female,"fatigue, shortness of breath, cough, fever",4,Diabetes
+P00428,35,Male,"body ache, headache, fatigue, cough",4,Influenza
+P00429,25,Female,"body ache, cough, fatigue, fever",4,Diabetes
+P00430,39,Other,"cough, nausea, fatigue, shortness of breath",4,Migraine
+P00431,9,Male,"headache, body ache, cough, fever, fatigue",5,COVID-19
+P00432,83,Female,"fever, headache, shortness of breath",3,Influenza
+P00433,47,Other,"fever, cough, nausea, headache, shortness of breath, body ache",6,Diabetes
+P00434,22,Male,"shortness of breath, fatigue, fever, body ache, headache, cough",6,COVID-19
+P00435,32,Male,"cough, shortness of breath, fever, body ache",4,COVID-19
+P00436,66,Female,"fatigue, cough, fever, shortness of breath, nausea",5,Migraine
+P00437,22,Other,"fatigue, shortness of breath, cough, nausea, body ache, fever",6,Influenza
+P00438,20,Female,"headache, shortness of breath, nausea",3,Influenza
+P00439,68,Male,"headache, body ache, fever, nausea, cough, shortness of breath, fatigue",7,Influenza
+P00440,18,Other,"fever, body ache, cough, headache, nausea, shortness of breath, fatigue",7,Diabetes
+P00441,38,Other,"cough, fever, headache",3,Diabetes
+P00442,5,Male,"fatigue, headache, cough, body ache, nausea",5,COVID-19
+P00443,76,Female,"nausea, body ache, shortness of breath, headache",4,Anxiety
+P00444,47,Male,"body ache, shortness of breath, fever",3,Migraine
+P00445,10,Other,"body ache, cough, nausea, shortness of breath, headache, fever",6,COVID-19
+P00446,75,Other,"shortness of breath, body ache, headache",3,COVID-19
+P00447,35,Male,"headache, cough, shortness of breath, nausea, fever, fatigue",6,Anxiety
+P00448,89,Male,"headache, fever, cough, fatigue, nausea, shortness of breath",6,COVID-19
+P00449,65,Male,"shortness of breath, fatigue, cough, headache, nausea, body ache, fever",7,Influenza
+P00450,55,Female,"cough, shortness of breath, headache, fatigue, nausea, body ache, fever",7,Influenza
+P00451,84,Other,"fatigue, headache, shortness of breath, fever, body ache, nausea",6,Diabetes
+P00452,45,Other,"fatigue, fever, nausea",3,Influenza
+P00453,73,Male,"fatigue, body ache, headache, cough",4,COVID-19
+P00454,2,Other,"nausea, headache, body ache, shortness of breath, fever, fatigue, cough",7,Migraine
+P00455,58,Other,"fatigue, nausea, headache",3,Anxiety
+P00456,31,Male,"cough, fever, fatigue",3,Diabetes
+P00457,86,Female,"fever, fatigue, nausea, body ache, cough, headache",6,COVID-19
+P00458,21,Other,"shortness of breath, body ache, nausea, cough, fever",5,COVID-19
+P00459,66,Other,"body ache, shortness of breath, fever, headache, cough, fatigue, nausea",7,Influenza
+P00460,71,Female,"headache, fever, shortness of breath, cough, nausea, body ache",6,Influenza
+P00461,62,Female,"headache, fever, fatigue",3,Anxiety
+P00462,14,Other,"headache, fever, body ache, nausea",4,COVID-19
+P00463,84,Female,"fatigue, cough, shortness of breath",3,Diabetes
+P00464,42,Other,"body ache, headache, nausea",3,Anxiety
+P00465,31,Female,"shortness of breath, fatigue, body ache",3,Diabetes
+P00466,15,Other,"cough, body ache, nausea, fever, shortness of breath, fatigue, headache",7,Anxiety
+P00467,9,Female,"fever, body ache, nausea, cough, fatigue, headache",6,Influenza
+P00468,38,Male,"body ache, nausea, fatigue, cough, fever",5,COVID-19
+P00469,46,Male,"fever, fatigue, nausea, headache, body ache, shortness of breath, cough",7,Diabetes
+P00470,17,Other,"shortness of breath, fatigue, fever, cough",4,Diabetes
+P00471,60,Female,"fever, cough, fatigue",3,Influenza
+P00472,84,Male,"nausea, body ache, fatigue",3,Migraine
+P00473,16,Female,"headache, nausea, fever, body ache, shortness of breath",5,Migraine
+P00474,63,Female,"fatigue, cough, headache, shortness of breath, fever",5,Influenza
+P00475,43,Other,"body ache, cough, shortness of breath, headache, nausea",5,COVID-19
+P00476,2,Other,"body ache, nausea, shortness of breath",3,Migraine
+P00477,69,Female,"fatigue, headache, cough, nausea, body ache",5,Migraine
+P00478,49,Other,"nausea, fatigue, headache, fever, body ache, shortness of breath",6,Migraine
+P00479,46,Other,"cough, fatigue, shortness of breath",3,Anxiety
+P00480,31,Other,"cough, nausea, shortness of breath, headache, fatigue, body ache, fever",7,Anxiety
+P00481,40,Male,"fever, nausea, fatigue, body ache, shortness of breath, headache, cough",7,Influenza
+P00482,38,Male,"shortness of breath, fatigue, fever, cough, body ache",5,Migraine
+P00483,27,Other,"fatigue, fever, headache",3,Diabetes
+P00484,57,Male,"body ache, nausea, fever, shortness of breath, cough, headache, fatigue",7,Diabetes
+P00485,24,Other,"headache, nausea, shortness of breath, cough",4,Diabetes
+P00486,88,Male,"fatigue, shortness of breath, body ache, cough, nausea, fever, headache",7,Diabetes
+P00487,10,Other,"shortness of breath, body ache, headache, fatigue, fever, nausea, cough",7,Influenza
+P00488,72,Male,"shortness of breath, body ache, headache, cough, fatigue",5,Diabetes
+P00489,6,Other,"body ache, shortness of breath, fever, fatigue, nausea",5,Diabetes
+P00490,15,Male,"headache, cough, fatigue",3,Influenza
+P00491,57,Male,"nausea, fever, fatigue, body ache, shortness of breath, headache",6,Influenza
+P00492,39,Other,"shortness of breath, body ache, nausea, headache, fever, fatigue, cough",7,Anxiety
+P00493,66,Female,"headache, nausea, shortness of breath, fever",4,Influenza
+P00494,88,Male,"fatigue, headache, body ache, shortness of breath",4,Anxiety
+P00495,34,Other,"shortness of breath, headache, fever",3,COVID-19
+P00496,42,Male,"body ache, fatigue, shortness of breath, headache",4,COVID-19
+P00497,87,Female,"fatigue, body ache, headache, fever, nausea, cough",6,Migraine
+P00498,56,Other,"shortness of breath, body ache, cough, nausea, fever",5,COVID-19
+P00499,46,Other,"headache, fatigue, shortness of breath",3,Anxiety
+P00500,61,Male,"body ache, shortness of breath, fever, headache",4,COVID-19
+P00501,7,Male,"headache, fatigue, nausea, fever, body ache, cough, shortness of breath",7,Anxiety
+P00502,42,Other,"cough, fatigue, nausea, shortness of breath",4,Anxiety
+P00503,46,Female,"fatigue, shortness of breath, headache, body ache, fever",5,Influenza
+P00504,31,Male,"body ache, cough, fever, headache, fatigue, nausea",6,Influenza
+P00505,41,Other,"cough, body ache, nausea",3,Anxiety
+P00506,19,Female,"body ache, nausea, fever, shortness of breath, fatigue",5,Anxiety
+P00507,27,Male,"shortness of breath, nausea, fatigue",3,Anxiety
+P00508,16,Female,"fatigue, body ache, shortness of breath, fever, headache, nausea, cough",7,Migraine
+P00509,52,Male,"body ache, nausea, headache, cough",4,COVID-19
+P00510,54,Female,"fever, shortness of breath, body ache, cough",4,COVID-19
+P00511,6,Other,"body ache, cough, fatigue, fever, nausea",5,COVID-19
+P00512,88,Female,"nausea, fever, headache, shortness of breath, body ache, cough",6,Diabetes
+P00513,16,Female,"cough, body ache, headache, fever",4,COVID-19
+P00514,54,Female,"nausea, headache, fatigue",3,Migraine
+P00515,84,Male,"fever, body ache, headache, cough, shortness of breath, fatigue, nausea",7,Anxiety
+P00516,70,Male,"fever, body ache, nausea",3,Influenza
+P00517,52,Male,"cough, headache, body ache",3,Migraine
+P00518,88,Male,"cough, headache, fatigue, fever, body ache, nausea, shortness of breath",7,Influenza
+P00519,26,Male,"nausea, fever, cough, shortness of breath, fatigue, body ache",6,Diabetes
+P00520,6,Other,"nausea, fever, cough, body ache, shortness of breath, fatigue, headache",7,Diabetes
+P00521,86,Male,"headache, body ache, fever, cough, shortness of breath",5,COVID-19
+P00522,44,Male,"fatigue, cough, body ache",3,Anxiety
+P00523,34,Male,"nausea, fever, shortness of breath, headache, cough",5,Influenza
+P00524,13,Other,"fever, cough, body ache, shortness of breath",4,Diabetes
+P00525,79,Female,"fatigue, nausea, headache, body ache, shortness of breath, cough",6,Influenza
+P00526,35,Female,"cough, body ache, nausea, shortness of breath, fever, fatigue",6,Anxiety
+P00527,20,Female,"body ache, fatigue, shortness of breath, cough, headache, fever",6,COVID-19
+P00528,45,Other,"fever, shortness of breath, fatigue",3,COVID-19
+P00529,44,Female,"fever, nausea, fatigue, shortness of breath",4,Anxiety
+P00530,11,Male,"headache, shortness of breath, nausea, body ache, fatigue, fever",6,Influenza
+P00531,23,Other,"fatigue, headache, body ache, shortness of breath, cough, nausea",6,Anxiety
+P00532,44,Female,"body ache, fatigue, cough, nausea, fever",5,Diabetes
+P00533,52,Female,"headache, nausea, body ache, fever, shortness of breath, fatigue",6,COVID-19
+P00534,86,Other,"fatigue, fever, body ache, shortness of breath",4,Anxiety
+P00535,61,Other,"fatigue, shortness of breath, nausea, headache, body ache, cough",6,COVID-19
+P00536,82,Other,"fever, shortness of breath, body ache, fatigue, headache",5,Diabetes
+P00537,67,Other,"fatigue, headache, shortness of breath, nausea, cough",5,Influenza
+P00538,56,Male,"cough, nausea, headache, fever, shortness of breath, body ache, fatigue",7,COVID-19
+P00539,61,Female,"fever, nausea, fatigue, shortness of breath, body ache, cough, headache",7,COVID-19
+P00540,43,Female,"fever, body ache, nausea, shortness of breath, fatigue",5,Anxiety
+P00541,53,Female,"fatigue, body ache, nausea, headache, fever",5,Diabetes
+P00542,59,Other,"nausea, headache, fatigue, body ache, cough",5,Influenza
+P00543,21,Other,"body ache, shortness of breath, fatigue",3,Anxiety
+P00544,5,Other,"cough, fever, shortness of breath, body ache",4,Diabetes
+P00545,10,Other,"fever, fatigue, cough, nausea, headache, body ache",6,Influenza
+P00546,20,Male,"nausea, fever, headache, body ache, cough, fatigue",6,Influenza
+P00547,12,Other,"shortness of breath, fever, cough, fatigue, headache, nausea, body ache",7,Diabetes
+P00548,73,Female,"shortness of breath, headache, cough, fatigue, nausea, fever, body ache",7,Anxiety
+P00549,37,Female,"fatigue, fever, shortness of breath, headache",4,Diabetes
+P00550,21,Male,"fatigue, body ache, cough, fever, nausea",5,Influenza
+P00551,15,Male,"nausea, fever, cough",3,Diabetes
+P00552,19,Male,"headache, fever, body ache, fatigue, cough, nausea",6,COVID-19
+P00553,66,Other,"shortness of breath, fever, nausea",3,Anxiety
+P00554,84,Male,"body ache, fever, nausea, fatigue, headache",5,Influenza
+P00555,57,Male,"nausea, headache, body ache, shortness of breath, fatigue, fever",6,COVID-19
+P00556,17,Female,"shortness of breath, headache, nausea, body ache, cough, fatigue",6,Influenza
+P00557,35,Female,"fatigue, fever, body ache, nausea",4,COVID-19
+P00558,14,Other,"fever, fatigue, cough, body ache",4,Diabetes
+P00559,11,Female,"cough, shortness of breath, fatigue",3,Anxiety
+P00560,13,Other,"cough, fatigue, body ache, shortness of breath, nausea",5,Influenza
+P00561,39,Other,"shortness of breath, cough, nausea, headache, fever, body ache, fatigue",7,Migraine
+P00562,88,Female,"headache, cough, body ache",3,Migraine
+P00563,7,Male,"cough, body ache, headache, fever",4,Anxiety
+P00564,77,Male,"nausea, headache, fever, fatigue, body ache, cough",6,COVID-19
+P00565,80,Male,"cough, fatigue, nausea",3,Diabetes
+P00566,42,Female,"shortness of breath, nausea, body ache",3,Influenza
+P00567,47,Female,"fever, headache, body ache, nausea, shortness of breath",5,Anxiety
+P00568,90,Male,"fever, shortness of breath, headache, body ache, fatigue, cough, nausea",7,Migraine
+P00569,16,Other,"nausea, shortness of breath, headache, fever, fatigue, cough",6,Anxiety
+P00570,66,Male,"shortness of breath, cough, fatigue, nausea, fever, body ache, headache",7,Influenza
+P00571,7,Male,"body ache, headache, cough, fatigue",4,Influenza
+P00572,30,Other,"nausea, headache, cough, fatigue",4,Influenza
+P00573,48,Male,"fatigue, shortness of breath, nausea",3,Influenza
+P00574,76,Male,"shortness of breath, nausea, cough, headache",4,COVID-19
+P00575,44,Other,"fatigue, shortness of breath, nausea",3,COVID-19
+P00576,55,Other,"body ache, shortness of breath, nausea, fever, cough, fatigue",6,Migraine
+P00577,62,Male,"shortness of breath, nausea, fatigue, headache, body ache, cough",6,COVID-19
+P00578,62,Female,"body ache, nausea, headache, cough",4,Migraine
+P00579,86,Female,"cough, fatigue, body ache, shortness of breath, fever, headache",6,Influenza
+P00580,30,Female,"fatigue, fever, headache, cough, nausea",5,Migraine
+P00581,50,Male,"headache, body ache, nausea, fever, shortness of breath, fatigue",6,Anxiety
+P00582,1,Other,"cough, nausea, fatigue, headache, fever",5,Influenza
+P00583,59,Other,"fever, cough, body ache, nausea, fatigue, shortness of breath",6,Migraine
+P00584,23,Male,"nausea, shortness of breath, cough, fever, body ache, fatigue",6,Diabetes
+P00585,18,Other,"headache, body ache, nausea",3,Influenza
+P00586,88,Male,"cough, fatigue, body ache, headache",4,COVID-19
+P00587,80,Male,"fatigue, cough, shortness of breath, fever",4,Migraine
+P00588,33,Male,"body ache, cough, fever, headache",4,Diabetes
+P00589,82,Other,"shortness of breath, cough, fever, fatigue, headache, body ache",6,Anxiety
+P00590,87,Female,"body ache, fever, shortness of breath, nausea, headache, fatigue",6,Anxiety
+P00591,13,Male,"fever, shortness of breath, body ache, fatigue, headache, cough, nausea",7,Migraine
+P00592,16,Male,"fever, headache, cough",3,Anxiety
+P00593,80,Female,"fever, shortness of breath, nausea, fatigue",4,Influenza
+P00594,87,Female,"nausea, body ache, headache",3,Anxiety
+P00595,19,Female,"fever, cough, body ache, headache",4,Influenza
+P00596,49,Male,"body ache, fatigue, cough",3,COVID-19
+P00597,58,Male,"fatigue, body ache, nausea, shortness of breath, cough",5,Diabetes
+P00598,2,Male,"fever, nausea, shortness of breath, fatigue, cough",5,COVID-19
+P00599,44,Male,"headache, fever, shortness of breath",3,COVID-19
+P00600,66,Male,"nausea, shortness of breath, body ache, headache, cough, fatigue",6,Diabetes
+P00601,70,Female,"shortness of breath, cough, fever, body ache, fatigue, headache",6,Anxiety
+P00602,60,Male,"nausea, fatigue, cough, shortness of breath, body ache",5,Anxiety
+P00603,82,Male,"nausea, shortness of breath, fatigue, body ache, cough",5,Anxiety
+P00604,47,Other,"fever, fatigue, nausea, cough",4,Diabetes
+P00605,8,Male,"headache, fever, fatigue, shortness of breath, cough, nausea, body ache",7,Diabetes
+P00606,73,Other,"shortness of breath, cough, fever, body ache, headache",5,Migraine
+P00607,57,Female,"fever, fatigue, cough",3,COVID-19
+P00608,89,Other,"fatigue, body ache, shortness of breath, fever, nausea, cough, headache",7,COVID-19
+P00609,46,Male,"fever, fatigue, nausea",3,Migraine
+P00610,6,Female,"nausea, fever, cough, fatigue, headache, shortness of breath",6,Migraine
+P00611,81,Male,"fatigue, nausea, headache, cough",4,Diabetes
+P00612,50,Other,"fatigue, headache, fever, body ache, nausea",5,Migraine
+P00613,78,Female,"nausea, fever, cough, headache, shortness of breath, fatigue, body ache",7,Influenza
+P00614,43,Male,"fever, headache, shortness of breath",3,Diabetes
+P00615,18,Other,"fever, nausea, body ache, fatigue, cough, shortness of breath",6,Anxiety
+P00616,33,Female,"shortness of breath, body ache, fever, nausea, headache, cough",6,Diabetes
+P00617,55,Female,"fatigue, fever, nausea, headache, body ache, shortness of breath, cough",7,COVID-19
+P00618,32,Other,"nausea, headache, body ache, fatigue, cough, shortness of breath, fever",7,Anxiety
+P00619,36,Female,"headache, shortness of breath, nausea, fever, fatigue",5,Diabetes
+P00620,41,Female,"shortness of breath, fatigue, headache, body ache",4,Diabetes
+P00621,21,Female,"cough, headache, shortness of breath, body ache, fever, nausea, fatigue",7,Diabetes
+P00622,37,Other,"body ache, fever, headache, shortness of breath",4,Anxiety
+P00623,40,Female,"cough, nausea, fever, shortness of breath, body ache, headache",6,Influenza
+P00624,83,Female,"body ache, headache, fever, shortness of breath, cough, nausea",6,Anxiety
+P00625,16,Female,"cough, body ache, fever, headache, fatigue",5,Anxiety
+P00626,17,Male,"nausea, shortness of breath, fever, cough, fatigue, headache",6,COVID-19
+P00627,11,Male,"nausea, body ache, cough, fatigue, fever, shortness of breath, headache",7,Migraine
+P00628,49,Other,"cough, headache, nausea",3,Influenza
+P00629,45,Other,"shortness of breath, headache, fatigue, nausea, fever, body ache, cough",7,Anxiety
+P00630,20,Other,"fever, headache, shortness of breath, nausea",4,Migraine
+P00631,71,Other,"nausea, shortness of breath, fever, headache, body ache",5,Influenza
+P00632,56,Female,"fever, cough, headache, shortness of breath",4,Influenza
+P00633,45,Other,"nausea, headache, shortness of breath, body ache",4,Diabetes
+P00634,31,Male,"nausea, fever, headache, shortness of breath",4,Migraine
+P00635,85,Other,"shortness of breath, nausea, body ache, fever, headache, fatigue",6,Migraine
+P00636,71,Female,"nausea, fatigue, cough, body ache, headache, fever, shortness of breath",7,COVID-19
+P00637,59,Male,"fatigue, body ache, shortness of breath",3,Migraine
+P00638,30,Male,"shortness of breath, fatigue, body ache, nausea, cough, headache, fever",7,Anxiety
+P00639,85,Male,"nausea, headache, body ache, fatigue, cough",5,COVID-19
+P00640,47,Other,"fever, shortness of breath, body ache, headache, cough, fatigue, nausea",7,Anxiety
+P00641,82,Male,"cough, fever, fatigue, nausea",4,Diabetes
+P00642,36,Other,"fever, fatigue, nausea",3,Diabetes
+P00643,46,Male,"fatigue, cough, shortness of breath, body ache, fever, nausea, headache",7,Anxiety
+P00644,13,Female,"fatigue, headache, nausea, fever",4,COVID-19
+P00645,89,Female,"headache, nausea, cough, fatigue, shortness of breath, fever",6,Diabetes
+P00646,68,Other,"body ache, cough, headache",3,Anxiety
+P00647,79,Other,"fever, nausea, cough",3,Diabetes
+P00648,53,Female,"shortness of breath, fever, body ache, cough",4,COVID-19
+P00649,35,Other,"shortness of breath, body ache, cough, nausea, headache, fatigue",6,Influenza
+P00650,19,Other,"fever, headache, fatigue",3,Diabetes
+P00651,35,Other,"shortness of breath, body ache, cough, fatigue, fever, headache, nausea",7,Influenza
+P00652,21,Female,"nausea, fatigue, cough, headache",4,Influenza
+P00653,85,Female,"cough, shortness of breath, fatigue, nausea, fever, body ache, headache",7,Anxiety
+P00654,30,Other,"fatigue, cough, fever, nausea, headache, body ache",6,Anxiety
+P00655,63,Female,"fever, cough, shortness of breath, headache, body ache, fatigue",6,Migraine
+P00656,50,Female,"fever, cough, shortness of breath, headache, nausea",5,Influenza
+P00657,44,Male,"fatigue, fever, body ache, shortness of breath, headache, cough, nausea",7,COVID-19
+P00658,66,Male,"shortness of breath, nausea, cough, fever, body ache",5,Diabetes
+P00659,35,Male,"cough, fatigue, headache, shortness of breath",4,Diabetes
+P00660,62,Male,"fever, body ache, cough, headache",4,COVID-19
+P00661,50,Male,"cough, body ache, fever, shortness of breath, headache",5,COVID-19
+P00662,16,Other,"body ache, cough, headache, nausea, fever",5,Influenza
+P00663,40,Female,"shortness of breath, body ache, fever, fatigue, nausea",5,Diabetes
+P00664,88,Female,"cough, headache, body ache",3,Anxiety
+P00665,26,Male,"cough, shortness of breath, nausea, body ache",4,Migraine
+P00666,50,Other,"headache, cough, body ache",3,Anxiety
+P00667,12,Male,"fever, body ache, shortness of breath, nausea, headache, fatigue",6,Anxiety
+P00668,79,Female,"headache, cough, fever, nausea, fatigue, shortness of breath",6,Anxiety
+P00669,85,Male,"headache, body ache, cough",3,COVID-19
+P00670,44,Other,"fever, fatigue, headache",3,Diabetes
+P00671,40,Male,"fatigue, body ache, fever, cough, nausea, headache",6,Anxiety
+P00672,11,Male,"fatigue, cough, nausea, headache, fever",5,Diabetes
+P00673,61,Other,"headache, cough, shortness of breath, nausea, fever, body ache, fatigue",7,Influenza
+P00674,36,Other,"shortness of breath, nausea, body ache, fever, fatigue, cough",6,COVID-19
+P00675,28,Male,"cough, fatigue, nausea, fever, shortness of breath, headache",6,Migraine
+P00676,64,Female,"shortness of breath, headache, fatigue, body ache",4,COVID-19
+P00677,21,Male,"shortness of breath, headache, cough",3,Migraine
+P00678,62,Male,"cough, fever, shortness of breath, headache, nausea, body ache, fatigue",7,Migraine
+P00679,89,Other,"fatigue, cough, body ache, nausea, fever, headache",6,Anxiety
+P00680,38,Male,"nausea, shortness of breath, cough, fever, body ache",5,Diabetes
+P00681,17,Male,"nausea, fatigue, shortness of breath, body ache, cough, headache, fever",7,COVID-19
+P00682,24,Female,"cough, fatigue, body ache, headache",4,Diabetes
+P00683,86,Other,"body ache, fever, cough, fatigue, nausea",5,Diabetes
+P00684,10,Female,"cough, nausea, fatigue, headache, shortness of breath",5,Migraine
+P00685,19,Other,"fatigue, fever, shortness of breath, nausea",4,Diabetes
+P00686,52,Female,"shortness of breath, cough, nausea, body ache, headache, fever, fatigue",7,Migraine
+P00687,38,Other,"shortness of breath, fever, headache, cough, fatigue, nausea",6,Migraine
+P00688,18,Female,"cough, headache, nausea, fatigue, body ache, fever, shortness of breath",7,Diabetes
+P00689,24,Male,"body ache, headache, fever, cough, nausea, shortness of breath, fatigue",7,Migraine
+P00690,49,Other,"fatigue, shortness of breath, fever, body ache, headache, cough, nausea",7,Diabetes
+P00691,52,Other,"shortness of breath, cough, fatigue, body ache, fever, nausea",6,Anxiety
+P00692,69,Other,"cough, shortness of breath, fever, headache, fatigue, nausea, body ache",7,COVID-19
+P00693,12,Male,"cough, shortness of breath, headache, fatigue, fever, nausea, body ache",7,COVID-19
+P00694,55,Male,"fever, body ache, cough, nausea, headache, fatigue",6,Migraine
+P00695,90,Other,"cough, headache, nausea, shortness of breath",4,Migraine
+P00696,52,Male,"nausea, fatigue, fever, headache",4,Diabetes
+P00697,26,Other,"fatigue, nausea, body ache, shortness of breath, cough, fever, headache",7,Anxiety
+P00698,43,Male,"body ache, fatigue, fever, headache",4,COVID-19
+P00699,10,Other,"fatigue, shortness of breath, nausea",3,COVID-19
+P00700,13,Other,"fever, headache, cough, shortness of breath",4,COVID-19
+P00701,13,Other,"cough, body ache, nausea, fever, fatigue",5,COVID-19
+P00702,27,Other,"cough, nausea, shortness of breath, headache, fatigue, fever",6,Diabetes
+P00703,71,Male,"fatigue, shortness of breath, fever, cough",4,COVID-19
+P00704,17,Female,"fatigue, body ache, fever, shortness of breath",4,Diabetes
+P00705,6,Other,"body ache, nausea, fatigue, fever, headache",5,COVID-19
+P00706,89,Male,"nausea, body ache, fatigue, shortness of breath",4,Anxiety
+P00707,87,Male,"shortness of breath, body ache, headache, fever",4,Anxiety
+P00708,28,Male,"fatigue, shortness of breath, fever, nausea, headache, cough",6,Diabetes
+P00709,57,Other,"fever, nausea, headache, cough, body ache",5,Migraine
+P00710,18,Other,"headache, shortness of breath, nausea, fatigue, fever, cough",6,COVID-19
+P00711,76,Female,"headache, cough, shortness of breath",3,Influenza
+P00712,88,Other,"shortness of breath, fever, body ache, cough, headache, fatigue",6,Anxiety
+P00713,80,Other,"body ache, fever, nausea, fatigue, cough, shortness of breath, headache",7,Migraine
+P00714,27,Male,"shortness of breath, body ache, fatigue, nausea, headache, cough",6,Migraine
+P00715,15,Female,"fever, headache, shortness of breath, body ache, nausea, cough, fatigue",7,Diabetes
+P00716,1,Male,"headache, body ache, shortness of breath, fever, fatigue, nausea",6,Diabetes
+P00717,46,Male,"fatigue, fever, headache, body ache, shortness of breath, nausea",6,Diabetes
+P00718,44,Male,"fatigue, fever, cough, body ache, shortness of breath, nausea, headache",7,Diabetes
+P00719,66,Other,"fatigue, nausea, body ache, shortness of breath, headache",5,Anxiety
+P00720,51,Female,"nausea, shortness of breath, fatigue, headache, fever, body ache",6,Anxiety
+P00721,75,Other,"body ache, nausea, cough, fever, shortness of breath",5,Migraine
+P00722,49,Male,"fever, fatigue, body ache, headache, shortness of breath, nausea",6,Anxiety
+P00723,72,Male,"fatigue, headache, body ache",3,Migraine
+P00724,32,Female,"fatigue, shortness of breath, body ache",3,Influenza
+P00725,87,Other,"shortness of breath, headache, nausea, fever, cough, fatigue",6,Influenza
+P00726,83,Female,"shortness of breath, cough, body ache, headache, nausea, fatigue",6,Migraine
+P00727,55,Other,"fatigue, body ache, cough, nausea, headache, shortness of breath",6,Diabetes
+P00728,22,Female,"shortness of breath, headache, fever, body ache, nausea, fatigue",6,Influenza
+P00729,89,Female,"shortness of breath, fever, body ache",3,COVID-19
+P00730,30,Male,"fever, nausea, body ache, headache, fatigue, shortness of breath",6,Influenza
+P00731,73,Female,"fatigue, headache, body ache, shortness of breath, fever, cough",6,COVID-19
+P00732,4,Male,"cough, fatigue, nausea, fever, body ache, headache",6,Migraine
+P00733,60,Female,"fatigue, shortness of breath, body ache, fever, headache",5,Diabetes
+P00734,22,Other,"fatigue, body ache, nausea, fever, cough",5,Diabetes
+P00735,21,Other,"body ache, nausea, shortness of breath",3,Influenza
+P00736,47,Other,"fatigue, body ache, cough, shortness of breath, headache, fever, nausea",7,Migraine
+P00737,13,Other,"headache, shortness of breath, body ache, nausea",4,Migraine
+P00738,54,Male,"fever, shortness of breath, cough, body ache, fatigue, headache, nausea",7,COVID-19
+P00739,29,Female,"cough, headache, body ache, fatigue, nausea",5,Anxiety
+P00740,55,Other,"fever, nausea, cough, headache, fatigue, body ache, shortness of breath",7,Influenza
+P00741,25,Other,"cough, headache, shortness of breath, nausea",4,Anxiety
+P00742,20,Female,"headache, fever, body ache, cough, fatigue, nausea",6,Anxiety
+P00743,21,Other,"shortness of breath, nausea, body ache, fatigue, headache, fever, cough",7,Influenza
+P00744,65,Other,"nausea, fever, body ache, shortness of breath, fatigue",5,Migraine
+P00745,85,Male,"body ache, fever, fatigue, cough, nausea",5,Migraine
+P00746,28,Male,"nausea, body ache, headache, shortness of breath",4,Diabetes
+P00747,83,Female,"fever, body ache, cough",3,Anxiety
+P00748,38,Female,"shortness of breath, nausea, cough, fatigue",4,COVID-19
+P00749,10,Female,"fever, cough, body ache, fatigue, shortness of breath",5,COVID-19
+P00750,44,Other,"headache, shortness of breath, cough",3,COVID-19
+P00751,13,Female,"fatigue, nausea, shortness of breath, cough, fever, headache, body ache",7,Anxiety
+P00752,43,Female,"cough, headache, fatigue, nausea, shortness of breath, body ache, fever",7,Diabetes
+P00753,26,Male,"fatigue, nausea, cough, headache, fever, shortness of breath, body ache",7,Diabetes
+P00754,12,Other,"body ache, headache, fatigue, fever, nausea",5,Influenza
+P00755,75,Female,"body ache, fever, shortness of breath, nausea",4,Migraine
+P00756,36,Male,"fatigue, cough, body ache, shortness of breath, headache, nausea",6,Anxiety
+P00757,52,Male,"shortness of breath, cough, fatigue",3,Diabetes
+P00758,28,Female,"headache, fever, fatigue, body ache, cough, shortness of breath, nausea",7,COVID-19
+P00759,81,Female,"cough, fatigue, body ache, shortness of breath, headache, nausea",6,COVID-19
+P00760,34,Other,"fatigue, headache, cough, fever, body ache",5,COVID-19
+P00761,67,Other,"body ache, shortness of breath, fatigue",3,COVID-19
+P00762,38,Female,"shortness of breath, nausea, cough, fatigue, body ache",5,Anxiety
+P00763,62,Female,"body ache, fever, fatigue",3,Influenza
+P00764,43,Other,"fever, shortness of breath, fatigue, headache, cough, nausea, body ache",7,Influenza
+P00765,4,Other,"nausea, headache, fatigue, shortness of breath, fever, body ache, cough",7,Diabetes
+P00766,25,Other,"fatigue, fever, cough, headache, body ache, nausea, shortness of breath",7,Diabetes
+P00767,61,Male,"nausea, fever, fatigue, cough, body ache",5,COVID-19
+P00768,5,Male,"body ache, cough, shortness of breath, fever, headache, nausea",6,Influenza
+P00769,70,Male,"body ache, nausea, cough, fever, shortness of breath, fatigue, headache",7,COVID-19
+P00770,37,Female,"body ache, cough, headache, fatigue, fever, shortness of breath",6,Influenza
+P00771,32,Other,"nausea, cough, fever",3,Anxiety
+P00772,64,Male,"cough, fatigue, shortness of breath, body ache",4,Migraine
+P00773,59,Male,"headache, cough, body ache, fever, nausea, fatigue, shortness of breath",7,Anxiety
+P00774,7,Female,"fatigue, cough, fever, body ache, nausea",5,Diabetes
+P00775,43,Other,"body ache, cough, nausea, fatigue, fever, headache",6,Anxiety
+P00776,2,Other,"cough, shortness of breath, body ache, headache",4,Migraine
+P00777,15,Male,"fatigue, cough, nausea, shortness of breath, fever, headache, body ache",7,Migraine
+P00778,26,Male,"body ache, fever, cough",3,COVID-19
+P00779,19,Female,"body ache, shortness of breath, headache, fatigue, cough, fever, nausea",7,Influenza
+P00780,27,Female,"headache, body ache, shortness of breath, fatigue, nausea",5,Anxiety
+P00781,34,Female,"cough, body ache, fatigue, headache, fever, nausea",6,COVID-19
+P00782,53,Other,"shortness of breath, fatigue, fever, cough, headache",5,Influenza
+P00783,49,Other,"shortness of breath, body ache, cough, headache, nausea, fatigue, fever",7,Diabetes
+P00784,52,Female,"headache, fatigue, shortness of breath, body ache, nausea, cough",6,COVID-19
+P00785,8,Male,"shortness of breath, cough, fatigue, body ache, nausea, headache, fever",7,Influenza
+P00786,29,Male,"cough, fever, headache, fatigue, nausea, body ache, shortness of breath",7,Migraine
+P00787,61,Other,"cough, fatigue, nausea, headache",4,Influenza
+P00788,61,Other,"fever, body ache, nausea, fatigue, cough, shortness of breath",6,Diabetes
+P00789,9,Female,"nausea, fever, headache, cough, fatigue",5,Diabetes
+P00790,47,Other,"shortness of breath, fatigue, nausea, body ache, fever",5,Diabetes
+P00791,8,Male,"nausea, cough, fever, headache",4,COVID-19
+P00792,64,Male,"headache, cough, shortness of breath",3,Diabetes
+P00793,89,Other,"headache, fever, cough, fatigue, body ache, shortness of breath",6,Diabetes
+P00794,76,Female,"nausea, fever, body ache, cough, shortness of breath, fatigue, headache",7,Diabetes
+P00795,11,Female,"fever, headache, cough, shortness of breath, nausea",5,Influenza
+P00796,23,Female,"cough, fatigue, shortness of breath, fever",4,Diabetes
+P00797,1,Female,"cough, shortness of breath, fatigue, nausea, fever",5,COVID-19
+P00798,37,Other,"nausea, fever, shortness of breath, fatigue, headache, body ache, cough",7,Anxiety
+P00799,74,Male,"fatigue, body ache, fever, headache, nausea",5,Influenza
+P00800,76,Female,"cough, fatigue, shortness of breath, headache, nausea",5,Influenza
+P00801,21,Male,"shortness of breath, nausea, cough, fatigue",4,Influenza
+P00802,65,Female,"nausea, fatigue, headache, fever, body ache",5,Influenza
+P00803,15,Other,"fever, headache, body ache, nausea, fatigue, cough",6,Influenza
+P00804,46,Male,"headache, fatigue, fever",3,Diabetes
+P00805,51,Female,"shortness of breath, cough, nausea, body ache",4,Influenza
+P00806,46,Male,"body ache, fatigue, fever, nausea, headache, cough, shortness of breath",7,Diabetes
+P00807,13,Male,"body ache, fever, fatigue, headache, shortness of breath",5,COVID-19
+P00808,41,Other,"body ache, fatigue, cough, headache, nausea, fever",6,COVID-19
+P00809,36,Other,"fever, nausea, shortness of breath, headache, cough",5,Diabetes
+P00810,2,Male,"body ache, fatigue, cough",3,Migraine
+P00811,61,Other,"body ache, fatigue, nausea, fever, shortness of breath",5,COVID-19
+P00812,86,Male,"fatigue, shortness of breath, nausea, body ache, cough, headache",6,Migraine
+P00813,68,Male,"body ache, fatigue, nausea, cough",4,Migraine
+P00814,7,Female,"nausea, fatigue, cough, fever, headache, shortness of breath",6,Anxiety
+P00815,31,Female,"headache, fever, fatigue, cough, body ache, shortness of breath",6,COVID-19
+P00816,34,Other,"body ache, headache, nausea, fever, shortness of breath, cough",6,Influenza
+P00817,71,Other,"cough, fever, fatigue",3,Influenza
+P00818,30,Other,"shortness of breath, cough, fever, body ache",4,Diabetes
+P00819,37,Male,"fatigue, shortness of breath, nausea, headache, cough",5,Diabetes
+P00820,58,Male,"fatigue, cough, nausea, body ache, headache, fever, shortness of breath",7,Migraine
+P00821,10,Female,"nausea, shortness of breath, body ache, fatigue, cough, headache, fever",7,Diabetes
+P00822,58,Male,"nausea, headache, body ache, fatigue, shortness of breath, cough, fever",7,Migraine
+P00823,54,Other,"cough, nausea, shortness of breath, headache, fever, fatigue, body ache",7,Migraine
+P00824,43,Female,"headache, body ache, nausea, fever",4,Anxiety
+P00825,17,Male,"fatigue, nausea, fever, headache, body ache",5,Migraine
+P00826,24,Other,"fever, headache, nausea",3,Influenza
+P00827,1,Other,"cough, body ache, headache, fatigue, shortness of breath, nausea, fever",7,Anxiety
+P00828,27,Male,"cough, fatigue, body ache, nausea, shortness of breath, headache, fever",7,Diabetes
+P00829,30,Other,"fatigue, shortness of breath, nausea, body ache, cough, fever, headache",7,Influenza
+P00830,84,Other,"fatigue, headache, cough, body ache",4,Migraine
+P00831,23,Male,"nausea, fever, fatigue, cough, body ache, shortness of breath",6,Anxiety
+P00832,89,Female,"fatigue, nausea, fever, headache",4,Diabetes
+P00833,64,Female,"shortness of breath, fever, nausea, fatigue",4,Anxiety
+P00834,7,Other,"cough, body ache, fever, shortness of breath, nausea, fatigue",6,Influenza
+P00835,88,Male,"headache, nausea, fever",3,Anxiety
+P00836,12,Male,"cough, fever, fatigue, shortness of breath, nausea, body ache, headache",7,Influenza
+P00837,48,Other,"cough, fatigue, fever, shortness of breath, headache, body ache",6,Anxiety
+P00838,67,Female,"fatigue, nausea, cough, body ache, shortness of breath",5,Migraine
+P00839,4,Female,"body ache, fatigue, fever, headache",4,Migraine
+P00840,76,Female,"nausea, cough, headache, fatigue, fever, shortness of breath, body ache",7,Influenza
+P00841,41,Other,"fever, nausea, fatigue",3,Anxiety
+P00842,37,Other,"cough, fatigue, nausea, fever, body ache, shortness of breath",6,Anxiety
+P00843,35,Male,"cough, headache, fatigue, fever, nausea, body ache",6,Migraine
+P00844,24,Male,"body ache, fatigue, nausea, shortness of breath, headache, fever, cough",7,Anxiety
+P00845,29,Female,"shortness of breath, body ache, nausea, fever",4,Anxiety
+P00846,78,Other,"body ache, shortness of breath, headache",3,Migraine
+P00847,71,Female,"shortness of breath, fever, headache, nausea, fatigue",5,Migraine
+P00848,31,Female,"nausea, shortness of breath, headache, fever, cough, fatigue, body ache",7,Diabetes
+P00849,28,Female,"headache, shortness of breath, body ache, nausea, fatigue, fever, cough",7,Influenza
+P00850,16,Male,"shortness of breath, body ache, cough, nausea, fatigue, fever, headache",7,Anxiety
+P00851,17,Male,"headache, cough, fatigue, nausea",4,Influenza
+P00852,83,Female,"nausea, fatigue, body ache, cough, shortness of breath, fever",6,Diabetes
+P00853,42,Other,"cough, body ache, nausea",3,Influenza
+P00854,16,Female,"body ache, nausea, headache, fever, cough",5,Migraine
+P00855,35,Other,"shortness of breath, fatigue, headache, cough, body ache, fever, nausea",7,Migraine
+P00856,65,Female,"fatigue, shortness of breath, fever, nausea",4,Diabetes
+P00857,10,Female,"headache, body ache, nausea",3,COVID-19
+P00858,78,Other,"cough, body ache, fever, nausea",4,Migraine
+P00859,49,Male,"shortness of breath, body ache, nausea, headache, cough",5,COVID-19
+P00860,33,Other,"nausea, headache, body ache, fatigue",4,Migraine
+P00861,51,Other,"fatigue, cough, nausea, fever, headache",5,Migraine
+P00862,70,Other,"headache, shortness of breath, fever, fatigue, cough, nausea",6,Influenza
+P00863,33,Male,"fatigue, body ache, fever, cough",4,Diabetes
+P00864,83,Male,"fatigue, nausea, cough, headache, shortness of breath, body ache",6,Diabetes
+P00865,72,Male,"shortness of breath, body ache, fatigue, cough",4,Diabetes
+P00866,66,Other,"headache, fever, cough, shortness of breath",4,Influenza
+P00867,58,Female,"fatigue, headache, cough, shortness of breath, body ache",5,Influenza
+P00868,37,Other,"shortness of breath, nausea, headache, fever, body ache",5,COVID-19
+P00869,13,Other,"nausea, body ache, fever, headache",4,COVID-19
+P00870,65,Other,"cough, headache, shortness of breath, body ache, fever, nausea",6,Influenza
+P00871,36,Female,"fever, body ache, headache, shortness of breath, fatigue, cough, nausea",7,Migraine
+P00872,10,Other,"fever, body ache, shortness of breath, headache, fatigue, cough",6,Influenza
+P00873,75,Male,"headache, shortness of breath, nausea, fever, cough",5,Influenza
+P00874,21,Male,"shortness of breath, headache, fatigue, body ache",4,Influenza
+P00875,53,Male,"headache, cough, nausea, fatigue, body ache",5,Influenza
+P00876,5,Male,"nausea, cough, fever, shortness of breath, headache",5,Influenza
+P00877,49,Male,"fever, cough, body ache",3,Influenza
+P00878,3,Female,"body ache, headache, fatigue, cough, nausea",5,Diabetes
+P00879,63,Male,"nausea, cough, headache",3,Migraine
+P00880,26,Female,"shortness of breath, nausea, headache, cough, body ache, fatigue, fever",7,Migraine
+P00881,78,Other,"body ache, cough, fever, shortness of breath, nausea, headache, fatigue",7,Migraine
+P00882,88,Female,"fever, headache, body ache, shortness of breath, cough, nausea, fatigue",7,Diabetes
+P00883,50,Other,"fever, headache, nausea, cough, shortness of breath, body ache",6,Anxiety
+P00884,55,Female,"fever, shortness of breath, nausea, headache, fatigue",5,Diabetes
+P00885,17,Other,"headache, fatigue, body ache, shortness of breath",4,Diabetes
+P00886,55,Male,"shortness of breath, headache, cough, fever, nausea",5,Migraine
+P00887,24,Other,"fatigue, body ache, shortness of breath, headache, fever, cough",6,Anxiety
+P00888,87,Male,"fever, headache, body ache, nausea, shortness of breath, cough",6,Influenza
+P00889,24,Female,"headache, body ache, nausea, fatigue, fever",5,COVID-19
+P00890,30,Other,"nausea, cough, fever",3,Migraine
+P00891,79,Female,"cough, nausea, headache, fatigue",4,Anxiety
+P00892,61,Other,"fatigue, headache, cough, fever, nausea",5,Anxiety
+P00893,34,Male,"fatigue, nausea, fever, cough",4,Diabetes
+P00894,30,Female,"shortness of breath, body ache, fever, headache",4,Anxiety
+P00895,84,Male,"shortness of breath, headache, nausea, fever",4,Diabetes
+P00896,11,Other,"nausea, fever, headache, cough, fatigue, shortness of breath, body ache",7,Influenza
+P00897,35,Female,"headache, cough, fever, nausea, fatigue",5,Anxiety
+P00898,48,Other,"cough, fatigue, fever, body ache, nausea, headache, shortness of breath",7,Influenza
+P00899,15,Female,"fatigue, cough, nausea",3,Migraine
+P00900,20,Other,"body ache, cough, headache, shortness of breath, fever",5,Anxiety
+P00901,62,Other,"fatigue, headache, fever, body ache, nausea",5,Diabetes
+P00902,77,Female,"shortness of breath, cough, fatigue, nausea",4,Influenza
+P00903,75,Female,"fever, shortness of breath, cough, nausea",4,Influenza
+P00904,12,Female,"fever, shortness of breath, fatigue, body ache, cough",5,Migraine
+P00905,85,Female,"fever, body ache, cough, fatigue",4,Anxiety
+P00906,51,Male,"body ache, cough, shortness of breath",3,Migraine
+P00907,76,Female,"fatigue, fever, shortness of breath, nausea, body ache",5,Diabetes
+P00908,73,Female,"shortness of breath, body ache, fever, nausea",4,Influenza
+P00909,11,Female,"nausea, shortness of breath, headache, body ache, fever, cough",6,Diabetes
+P00910,76,Female,"body ache, fatigue, shortness of breath, headache, fever, cough, nausea",7,Anxiety
+P00911,24,Female,"fever, headache, fatigue, body ache, nausea, cough",6,Migraine
+P00912,20,Male,"cough, fatigue, fever, nausea, headache, body ache, shortness of breath",7,Migraine
+P00913,43,Male,"cough, nausea, headache, shortness of breath",4,COVID-19
+P00914,52,Male,"cough, fever, body ache, fatigue, shortness of breath",5,Influenza
+P00915,57,Other,"fever, shortness of breath, body ache",3,Diabetes
+P00916,69,Other,"shortness of breath, cough, headache, fever",4,Diabetes
+P00917,50,Other,"fatigue, headache, body ache, fever, nausea, shortness of breath",6,Migraine
+P00918,49,Female,"cough, fatigue, headache, shortness of breath",4,COVID-19
+P00919,69,Other,"cough, fatigue, body ache, headache, shortness of breath, fever, nausea",7,Influenza
+P00920,55,Female,"cough, body ache, fatigue, nausea, headache",5,COVID-19
+P00921,14,Male,"shortness of breath, headache, cough",3,Anxiety
+P00922,83,Male,"shortness of breath, fever, nausea, fatigue, headache",5,Anxiety
+P00923,46,Male,"nausea, fever, shortness of breath",3,Migraine
+P00924,31,Male,"fatigue, shortness of breath, headache, cough, body ache, fever",6,COVID-19
+P00925,63,Male,"fatigue, fever, body ache, headache, cough, shortness of breath, nausea",7,COVID-19
+P00926,10,Other,"shortness of breath, body ache, nausea",3,COVID-19
+P00927,63,Male,"headache, cough, nausea, shortness of breath, fatigue, body ache",6,Diabetes
+P00928,34,Male,"body ache, headache, fever, fatigue, shortness of breath",5,Migraine
+P00929,67,Other,"shortness of breath, fever, nausea, fatigue",4,Influenza
+P00930,88,Other,"body ache, nausea, fever, shortness of breath",4,COVID-19
+P00931,41,Male,"headache, fatigue, nausea",3,Influenza
+P00932,77,Female,"fever, shortness of breath, nausea, fatigue, headache, cough",6,Influenza
+P00933,56,Female,"nausea, headache, body ache, fever, shortness of breath, fatigue",6,Anxiety
+P00934,68,Other,"body ache, shortness of breath, nausea",3,Migraine
+P00935,27,Female,"fatigue, shortness of breath, cough",3,COVID-19
+P00936,14,Male,"fatigue, body ache, cough",3,Anxiety
+P00937,69,Male,"cough, nausea, fatigue, headache, shortness of breath, fever, body ache",7,Anxiety
+P00938,52,Male,"shortness of breath, body ache, nausea, fatigue, cough, fever, headache",7,Migraine
+P00939,8,Female,"fatigue, shortness of breath, nausea, cough, fever, headache, body ache",7,COVID-19
+P00940,89,Female,"fever, headache, body ache, nausea, shortness of breath",5,Influenza
+P00941,85,Female,"nausea, cough, fever",3,Migraine
+P00942,11,Male,"fever, fatigue, headache, shortness of breath, nausea, cough, body ache",7,COVID-19
+P00943,50,Other,"body ache, cough, headache, shortness of breath, nausea, fever, fatigue",7,Influenza
+P00944,68,Female,"cough, fever, body ache, headache, fatigue, shortness of breath, nausea",7,COVID-19
+P00945,71,Female,"cough, nausea, headache, fatigue, fever, body ache",6,Diabetes
+P00946,12,Male,"fatigue, cough, body ache",3,Diabetes
+P00947,77,Female,"shortness of breath, fever, nausea, cough, body ache",5,Anxiety
+P00948,86,Other,"cough, nausea, fatigue, body ache, headache",5,Diabetes
+P00949,52,Male,"fatigue, nausea, shortness of breath, body ache",4,Migraine
+P00950,11,Female,"nausea, fatigue, shortness of breath",3,Anxiety
+P00951,56,Male,"shortness of breath, body ache, nausea",3,Migraine
+P00952,81,Other,"fatigue, shortness of breath, body ache, headache, cough, fever, nausea",7,Influenza
+P00953,70,Female,"fever, nausea, body ache, fatigue, cough, shortness of breath",6,COVID-19
+P00954,44,Other,"headache, cough, nausea",3,Anxiety
+P00955,59,Other,"shortness of breath, body ache, fever, fatigue, cough, headache, nausea",7,COVID-19
+P00956,4,Female,"body ache, cough, fatigue, fever, shortness of breath, nausea",6,Influenza
+P00957,52,Female,"fever, body ache, shortness of breath, cough, nausea, fatigue",6,Influenza
+P00958,60,Other,"fatigue, fever, headache, shortness of breath, nausea",5,Migraine
+P00959,80,Other,"headache, fatigue, body ache, cough, shortness of breath, fever, nausea",7,Diabetes
+P00960,16,Male,"cough, shortness of breath, nausea, body ache, fatigue, headache",6,Diabetes
+P00961,38,Other,"fever, fatigue, nausea",3,Influenza
+P00962,86,Female,"cough, fever, body ache, fatigue",4,Anxiety
+P00963,81,Female,"cough, nausea, fatigue",3,Anxiety
+P00964,78,Other,"headache, body ache, cough, shortness of breath, nausea",5,Influenza
+P00965,44,Male,"cough, nausea, fever, headache, body ache, fatigue, shortness of breath",7,COVID-19
+P00966,86,Male,"body ache, cough, headache, fatigue, shortness of breath",5,Influenza
+P00967,2,Female,"fatigue, fever, body ache, headache, cough, shortness of breath, nausea",7,Influenza
+P00968,30,Female,"body ache, cough, shortness of breath",3,Diabetes
+P00969,56,Other,"shortness of breath, fatigue, headache, body ache, cough, nausea",6,Anxiety
+P00970,40,Male,"shortness of breath, fever, headache, cough",4,COVID-19
+P00971,21,Female,"nausea, headache, fatigue, fever",4,Anxiety
+P00972,78,Other,"fever, headache, shortness of breath, fatigue, body ache, nausea, cough",7,Diabetes
+P00973,6,Male,"nausea, body ache, fatigue, headache, cough, shortness of breath",6,Diabetes
+P00974,33,Male,"shortness of breath, body ache, headache, fever, cough, fatigue",6,Influenza
+P00975,65,Other,"shortness of breath, fever, fatigue, nausea, body ache, headache, cough",7,COVID-19
+P00976,84,Male,"body ache, fever, shortness of breath, fatigue",4,Anxiety
+P00977,81,Female,"headache, shortness of breath, fatigue, body ache, nausea, fever, cough",7,Diabetes
+P00978,85,Other,"shortness of breath, body ache, fever, headache, fatigue, cough",6,Anxiety
+P00979,6,Male,"nausea, fatigue, cough, fever, body ache, shortness of breath",6,Influenza
+P00980,40,Female,"cough, fatigue, fever, shortness of breath",4,COVID-19
+P00981,27,Other,"fatigue, headache, fever, shortness of breath, body ache",5,Diabetes
+P00982,58,Other,"shortness of breath, fatigue, cough, nausea, headache, body ache",6,Anxiety
+P00983,29,Male,"nausea, shortness of breath, headache, fatigue, cough, body ache, fever",7,Diabetes
+P00984,11,Female,"nausea, fever, cough, shortness of breath, headache, body ache, fatigue",7,Diabetes
+P00985,52,Other,"body ache, nausea, headache, shortness of breath, fever",5,Diabetes
+P00986,2,Female,"fatigue, nausea, body ache, shortness of breath, headache",5,COVID-19
+P00987,27,Male,"fatigue, fever, shortness of breath, nausea, headache, body ache",6,COVID-19
+P00988,83,Other,"nausea, fever, shortness of breath, fatigue, headache, body ache, cough",7,Anxiety
+P00989,25,Male,"headache, body ache, fever",3,Diabetes
+P00990,74,Male,"fever, fatigue, cough, headache",4,Diabetes
+P00991,25,Male,"body ache, headache, shortness of breath, fever, nausea, fatigue, cough",7,Influenza
+P00992,58,Male,"nausea, cough, headache, fever, fatigue, body ache, shortness of breath",7,Influenza
+P00993,47,Other,"cough, headache, fever, body ache, shortness of breath",5,Anxiety
+P00994,42,Male,"shortness of breath, fever, body ache, cough, headache, fatigue",6,Anxiety
+P00995,86,Female,"headache, fever, shortness of breath, cough",4,Diabetes
+P00996,49,Female,"nausea, fever, cough, headache, fatigue, shortness of breath, body ache",7,Anxiety
+P00997,7,Male,"fatigue, shortness of breath, fever",3,COVID-19
+P00998,18,Other,"fatigue, shortness of breath, nausea",3,Anxiety
+P00999,37,Male,"nausea, cough, shortness of breath, fatigue, headache",5,Migraine
