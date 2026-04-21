@@ -7,6 +7,7 @@ import {
 } from 'recharts'
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
+import Layout from './components/Layout'
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -64,40 +65,7 @@ export default function App() {
   const COLORS = ['#2563eb', '#059669', '#f59e0b', '#db2777', '#7c3aed', '#0891b2']
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-700 font-sans selection:bg-sky-100">
-      
-      {/* Navbar / Header */}
-      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="bg-blue-600 p-2.5 rounded-lg text-white">
-              <Activity size={24} />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold tracking-tight text-slate-800 flex items-center gap-2">
-                ClinX Sentinel <Sparkles size={16} className="text-sky-500" />
-              </h1>
-              <p className="text-xs text-slate-500 font-medium">Next-Gen Epidemiological Intelligence</p>
-            </div>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-6">
-            <div className="relative group">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4" />
-              <input 
-                type="text" 
-                placeholder="Search global patterns..." 
-                className="bg-white border border-slate-200 rounded-full pl-10 pr-4 py-2 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 transition-all w-64 group-hover:border-slate-300"
-              />
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-100 rounded-full text-sm text-emerald-700 font-medium hover:bg-emerald-100/70 transition-colors cursor-pointer">
-              <MapPin size={16} className="text-emerald-600" />
-              Global View
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <Layout activePath="#/">
       <main className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         
         {/* KPI Section */}
@@ -303,7 +271,7 @@ export default function App() {
         </div>
 
       </main>
-    </div>
+    </Layout>
   )
 }
 
