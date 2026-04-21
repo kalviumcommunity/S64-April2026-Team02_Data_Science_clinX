@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import DiagnosisTrends from './DiagnosisTrends.tsx'
 import TreatmentPlan from './TreatmentPlan.tsx'
+import ClinicInsights from './ClinicInsights.tsx'
 
 function AppRouter() {
   const [route, setRoute] = useState(window.location.hash || '#/')
@@ -16,6 +17,10 @@ function AppRouter() {
 
   if (route === '#/diagnosis') {
     return <DiagnosisTrends />
+  }
+
+  if (route === '#/clinics') {
+    return <ClinicInsights />
   }
   
   if (route.startsWith('#/treatment/')) {

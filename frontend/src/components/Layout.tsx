@@ -62,11 +62,15 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
             </a>
             
             <a 
-              href="#" 
+              href="#/clinics" 
               title="Clinic Insights"
-              className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap text-slate-600 hover:bg-slate-50 font-medium ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
+              className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
+                activePath === '#/clinics' 
+                  ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
+                  : 'text-slate-600 hover:bg-slate-50 font-medium'
+              } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <Building size={18} className="shrink-0 text-slate-400" />
+              <Building size={18} className={`shrink-0 ${activePath === '#/clinics' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Clinic Insights</span>}
             </a>
             
