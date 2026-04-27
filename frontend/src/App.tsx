@@ -64,7 +64,7 @@ export default function App() {
   const COLORS = ['#2563eb', '#059669', '#f59e0b', '#db2777', '#7c3aed', '#0891b2']
 
   return (
-    <Layout activePath="#/">
+    <Layout activePath="/">
       <main className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         
         {/* KPI Section */}

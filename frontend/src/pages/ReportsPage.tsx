@@ -30,7 +30,7 @@ const ReportsPage = () => {
   }, []);
 
   if (loading) return (
-    <Layout activePath="#/reports">
+    <Layout activePath="/reports">
       <div className="flex items-center justify-center h-full">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
       </div>
@@ -38,7 +38,7 @@ const ReportsPage = () => {
   );
 
   if (error || !data) return (
-    <Layout activePath="#/reports">
+    <Layout activePath="/reports">
       <div className="p-8 max-w-7xl mx-auto">
         <div className="bg-rose-50 border border-rose-200 p-6 rounded-2xl text-center">
           <ShieldAlert className="mx-auto text-rose-500 mb-4" size={48} />
@@ -75,7 +75,7 @@ const ReportsPage = () => {
   };
 
   if (loading) return (
-    <Layout activePath="#/reports">
+    <Layout activePath="/reports">
       <div className="flex items-center justify-center h-full">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
       </div>
@@ -85,7 +85,7 @@ const ReportsPage = () => {
   const COLORS = ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
 
   return (
-    <Layout activePath="#/reports">
+    <Layout activePath="/reports">
       <div className="p-8 max-w-7xl mx-auto space-y-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>

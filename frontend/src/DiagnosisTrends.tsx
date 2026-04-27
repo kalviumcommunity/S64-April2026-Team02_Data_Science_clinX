@@ -7,6 +7,7 @@ import {
   Search, Brain, Zap, MessageCircle, BarChart3, Stethoscope, ArrowRight
 } from 'lucide-react';
 import Layout from './components/Layout';
+import { Link } from 'react-router-dom';
 
 // Mock Datasets
 const pieData = [
@@ -68,13 +69,13 @@ const DetailPanel = ({ selectedDisease }: { selectedDisease: string }) => {
             {selectedDisease} <span className="text-slate-400 font-medium text-sm ml-1">Detail View</span>
           </h3>
           <p className="text-sm text-slate-500 font-medium mt-0.5">Prevalence: {details.prevalence}% of cases</p>
-          <a
-            href={`#/treatment/${encodeURIComponent(selectedDisease)}`}
+          <Link
+            to={`/treatment/${encodeURIComponent(selectedDisease)}`}
             className="inline-flex items-center gap-1.5 mt-2 px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 text-[11px] font-semibold uppercase tracking-wide rounded-md border border-indigo-200 transition-colors"
           >
             <Stethoscope size={12} />
             View Treatment Plan
-          </a>
+          </Link>
         </div>
         <div className="flex gap-1.5 flex-wrap justify-end">
           {details.regions.map((r: string) => (
@@ -174,7 +175,7 @@ export default function DiagnosisTrends() {
   };
 
   return (
-    <Layout activePath="#/diagnosis">
+    <Layout activePath="/diagnosis">
       
       <div className="p-8 pb-24 relative max-w-[1200px] mx-auto">
         <div className="mb-6">
@@ -305,9 +306,9 @@ export default function DiagnosisTrends() {
                        <div className="flex justify-between items-start">
                           <div className="flex flex-col">
                              <span className="text-[13px] font-semibold text-slate-700 leading-tight">{ds.name}</span>
-                             <a href={`#/treatment/${encodeURIComponent(ds.name)}`} className="text-[10px] text-blue-500 hover:text-blue-700 font-bold uppercase tracking-wider flex items-center gap-1 mt-1.5 w-max group-hover:translate-x-0.5 transition-transform">
+                             <Link to={`/treatment/${encodeURIComponent(ds.name)}`} className="text-[10px] text-blue-500 hover:text-blue-700 font-bold uppercase tracking-wider flex items-center gap-1 mt-1.5 w-max group-hover:translate-x-0.5 transition-transform">
                                <Stethoscope size={10} /> View Plan <ArrowRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity -ml-0.5" />
-                             </a>
+                             </Link>
                           </div>
                           <span className="text-[13px] font-bold" style={{color: PIE_COLORS[ds.name]}}>{ds.score}%</span>
                        </div>

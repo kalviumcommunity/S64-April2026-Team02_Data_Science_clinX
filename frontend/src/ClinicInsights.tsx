@@ -183,7 +183,7 @@ export default function ClinicInsights() {
   const hospitalData = realInsights?.hospital_infrastructure;
 
   if (loading) return (
-    <Layout activePath="#/clinics">
+    <Layout activePath="/clinics">
       <div className="flex items-center justify-center min-h-[60vh]">
         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
       </div>
@@ -191,7 +191,7 @@ export default function ClinicInsights() {
   );
 
   return (
-    <Layout activePath="#/clinics">
+    <Layout activePath="/clinics">
       <div className="p-8 pb-24 max-w-[1400px] mx-auto space-y-8">
         
         {/* Header */}

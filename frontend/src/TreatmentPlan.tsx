@@ -3,6 +3,7 @@ import {
   Activity, AlertTriangle, ShieldAlert, HeartPulse, Thermometer,
   Clock, Stethoscope, Shield, Pill, ArrowRight, Users, CheckCircle, Bell, ArrowLeft, Beaker
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import Layout from './components/Layout';
@@ -130,14 +131,14 @@ export default function TreatmentPlan({ diseaseName }: TreatmentPlanProps) {
   const activeData = data.ageGroups[activeSegment];
 
   return (
-    <Layout activePath={`#/treatment/${diseaseName}`}>
+    <Layout activePath={`/treatment/${diseaseName}`}>
       <div className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         
         {/* Navigation & Header */}
         <div>
-          <a href="#/diagnosis" className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors mb-4 group">
+          <Link to="/diagnosis" className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-blue-600 transition-colors mb-4 group">
             <ArrowLeft size={16} className="mr-1 group-hover:-translate-x-1 transition-transform" /> Back to Diagnosis
-          </a>
+          </Link>
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
             <div>
