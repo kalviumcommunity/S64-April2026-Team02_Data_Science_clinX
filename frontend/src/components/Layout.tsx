@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Activity, BarChart3, Building, FileText, Bell, AlertTriangle, LayoutTemplate } from 'lucide-react';
+import NotificationDropdown from './NotificationDropdown';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -75,11 +76,15 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
             </a>
             
             <a 
-              href="#" 
+              href="#/reports" 
               title="Reports"
-              className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap text-slate-600 hover:bg-slate-50 font-medium ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
+              className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
+                activePath === '#/reports' 
+                  ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
+                  : 'text-slate-600 hover:bg-slate-50 font-medium'
+              } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <FileText size={18} className="shrink-0 text-slate-400" />
+              <FileText size={18} className={`shrink-0 ${activePath === '#/reports' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Reports</span>}
             </a>
           </nav>
@@ -101,12 +106,7 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
                 2 symptom clusters need review
               </div>
             )}
-            <div className="relative cursor-pointer group">
-              <div className="p-2 rounded-full group-hover:bg-slate-100 transition-colors">
-                <Bell size={20} className="text-slate-500 group-hover:text-slate-700" />
-              </div>
-              <span className="absolute top-1.5 right-1.5 w-4 h-4 bg-amber-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-white box-content shadow-sm">2</span>
-            </div>
+            <NotificationDropdown />
           </div>
         </header>
 
