@@ -16,8 +16,8 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
       <aside className={`flex-shrink-0 border-r border-slate-200 bg-white flex flex-col z-10 transition-all duration-300 ease-in-out ${isSidebarOpen ? 'w-[240px]' : 'w-[72px]'}`}>
         
         <div className={`py-6 flex items-center overflow-hidden transition-all duration-300 ${isSidebarOpen ? 'px-6 gap-3' : 'px-0 justify-center'}`}>
-          <div className="bg-blue-600 text-white p-2 rounded-lg shadow-sm shrink-0">
-            <Activity size={22} className="stroke-[2.5]" />
+          <div className="shrink-0">
+            <img src="/logo.png" alt="ClinX Logo" className="w-14 h-14 object-contain" />
           </div>
           {isSidebarOpen && (
             <div className="whitespace-nowrap transition-opacity">
