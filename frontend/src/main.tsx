@@ -6,33 +6,24 @@ import DiagnosisTrends from './DiagnosisTrends.tsx'
 import TreatmentPlan from './TreatmentPlan.tsx'
 import ClinicInsights from './ClinicInsights.tsx'
 
-function AppRouter() {
-  const [route, setRoute] = useState(window.location.hash || '#/')
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
+import ReportsPage from './pages/ReportsPage.tsx'
 
-  useEffect(() => {
-    const handleHashChange = () => setRoute(window.location.hash)
-    window.addEventListener('hashchange', handleHashChange)
-    return () => window.removeEventListener('hashchange', handleHashChange)
-  }, [])
-
-  if (route === '#/diagnosis') {
-    return <DiagnosisTrends />
-  }
-
-  if (route === '#/clinics') {
-    return <ClinicInsights />
-  }
-  
-  if (route.startsWith('#/treatment/')) {
-    const diseaseName = decodeURIComponent(route.replace('#/treatment/', ''))
-    return <TreatmentPlan diseaseName={diseaseName} />
-  }
-
-  return <App />
-}
+const TreatmentWrapper = () => {
+  const { diseaseName } = useParams();
+  return <TreatmentPlan diseaseName={decodeURIComponent(diseaseName || '')} />;
+};
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppRouter />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/diagnosis" element={<DiagnosisTrends />} />
+        <Route path="/clinics" element={<ClinicInsights />} />
+        <Route path="/reports" element={<ReportsPage />} />
+        <Route path="/treatment/:diseaseName" element={<TreatmentWrapper />} />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )

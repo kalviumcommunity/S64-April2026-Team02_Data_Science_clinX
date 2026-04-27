@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Activity, BarChart3, Building, FileText, Bell, AlertTriangle, LayoutTemplate } from 'lucide-react';
+import { Activity, BarChart3, Building, FileText, Bell, AlertTriangle, Menu } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import NotificationDropdown from './NotificationDropdown';
 
 interface LayoutProps {
   children: React.ReactNode;
-  activePath?: string;
 }
 
-export default function Layout({ children, activePath = '#/' }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const location = useLocation();
+  const activePath = location.pathname;
 
   return (
     <div className="flex h-screen bg-[#f8fafc] text-slate-800 font-sans overflow-hidden">
@@ -36,57 +38,57 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
           )}
           
           <nav className="space-y-2">
-            <a 
-              href="#/" 
+            <Link 
+              to="/" 
               title="Dashboard"
               className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
-                activePath === '#/' 
+                activePath === '/' 
                   ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
                   : 'text-slate-600 hover:bg-slate-50 font-medium'
               } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <Activity size={18} className={`shrink-0 ${activePath === '#/' ? "text-blue-600" : "text-slate-400"}`} />
+              <Activity size={18} className={`shrink-0 ${activePath === '/' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Dashboard</span>}
-            </a>
+            </Link>
             
-            <a 
-              href="#/diagnosis" 
+            <Link 
+              to="/diagnosis" 
               title="Diagnosis & Trends"
               className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
-                activePath === '#/diagnosis' 
+                activePath === '/diagnosis' 
                   ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
                   : 'text-slate-600 hover:bg-slate-50 font-medium'
               } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <BarChart3 size={18} className={`shrink-0 ${activePath === '#/diagnosis' ? "text-blue-600" : "text-slate-400"}`} />
+              <BarChart3 size={18} className={`shrink-0 ${activePath === '/diagnosis' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Diagnosis & Trends</span>}
-            </a>
+            </Link>
             
-            <a 
-              href="#/clinics" 
+            <Link 
+              to="/clinics" 
               title="Clinic Insights"
               className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
-                activePath === '#/clinics' 
+                activePath === '/clinics' 
                   ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
                   : 'text-slate-600 hover:bg-slate-50 font-medium'
               } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <Building size={18} className={`shrink-0 ${activePath === '#/clinics' ? "text-blue-600" : "text-slate-400"}`} />
+              <Building size={18} className={`shrink-0 ${activePath === '/clinics' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Clinic Insights</span>}
-            </a>
+            </Link>
             
-            <a 
-              href="#/reports" 
+            <Link 
+              to="/reports" 
               title="Reports"
               className={`flex items-center rounded-lg transition-colors text-sm overflow-hidden whitespace-nowrap ${
-                activePath === '#/reports' 
+                activePath === '/reports' 
                   ? 'bg-[#f0f6ff] text-blue-700 font-semibold' 
                   : 'text-slate-600 hover:bg-slate-50 font-medium'
               } ${isSidebarOpen ? 'px-3 py-2.5 gap-3' : 'py-3 justify-center'}`}
             >
-              <FileText size={18} className={`shrink-0 ${activePath === '#/reports' ? "text-blue-600" : "text-slate-400"}`} />
+              <FileText size={18} className={`shrink-0 ${activePath === '/reports' ? "text-blue-600" : "text-slate-400"}`} />
               {isSidebarOpen && <span>Reports</span>}
-            </a>
+            </Link>
           </nav>
         </div>
       </aside>
@@ -97,10 +99,10 @@ export default function Layout({ children, activePath = '#/' }: LayoutProps) {
         {/* Top Header */}
         <header className="h-16 border-b border-slate-200 bg-white flex items-center justify-between px-6 flex-shrink-0 z-10 w-full transition-all duration-300">
           <div>
-            <LayoutTemplate onClick={() => setIsSidebarOpen(!isSidebarOpen)} size={20} className="text-slate-400 cursor-pointer hover:text-slate-600 transition-colors" />
+            <Menu onClick={() => setIsSidebarOpen(!isSidebarOpen)} size={20} className="text-slate-400 cursor-pointer hover:text-slate-600 transition-colors" />
           </div>
           <div className="flex items-center gap-5">
-            {activePath === '#/diagnosis' && (
+            {activePath === '/diagnosis' && (
               <div className="flex items-center gap-2 bg-[#fffbeb] border border-[#fde68a] text-amber-700 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-sm">
                 <AlertTriangle size={14} className="text-amber-500" />
                 2 symptom clusters need review

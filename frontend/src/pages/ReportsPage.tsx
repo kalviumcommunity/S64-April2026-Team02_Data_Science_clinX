@@ -10,21 +10,50 @@ import Layout from '../components/Layout';
 const ReportsPage = () => {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [showExportOptions, setShowExportOptions] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setError(null);
         const result = await getReportSummary();
         setData(result);
       } catch (error) {
         console.error('Error fetching report:', error);
+        setError('Failed to load clinical reports. Please ensure the backend is running.');
       } finally {
         setLoading(false);
       }
     };
     fetchData();
   }, []);
+
+  if (loading) return (
+    <Layout activePath="#/reports">
+      <div className="flex items-center justify-center h-full">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+      </div>
+    </Layout>
+  );
+
+  if (error || !data) return (
+    <Layout activePath="#/reports">
+      <div className="p-8 max-w-7xl mx-auto">
+        <div className="bg-rose-50 border border-rose-200 p-6 rounded-2xl text-center">
+          <ShieldAlert className="mx-auto text-rose-500 mb-4" size={48} />
+          <h2 className="text-xl font-bold text-rose-800">Connection Error</h2>
+          <p className="text-rose-600 mt-2">{error || 'Data is unavailable'}</p>
+          <button 
+            onClick={() => window.location.reload()}
+            className="mt-6 bg-rose-600 text-white px-6 py-2 rounded-xl font-semibold hover:bg-rose-700 transition-colors"
+          >
+            Retry Connection
+          </button>
+        </div>
+      </div>
+    </Layout>
+  );
 
   const handleExport = async (format: 'csv' | 'pdf') => {
     try {
