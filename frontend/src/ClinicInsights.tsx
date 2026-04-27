@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from './components/Layout';
-import { Building, Bed, Users, AlertTriangle } from 'lucide-react';
+import { Building, Bed, Users, AlertTriangle, Sparkles, MapPin } from 'lucide-react';
+import { getInsights } from './services/api';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -160,59 +161,173 @@ function ClinicCard({ clinic }: { clinic: typeof STATIC_DATA['clinics'][0] }) {
 }
 
 export default function ClinicInsights() {
-  const [data] = useState(STATIC_DATA);
+  const [staticData] = useState(STATIC_DATA);
+  const [realInsights, setRealInsights] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
-  const overloadedCount = data.clinics.filter(c => (c.beds.occupied / c.beds.total) * 100 > 85).length;
+  useEffect(() => {
+    const fetchRealInsights = async () => {
+      try {
+        const data = await getInsights();
+        setRealInsights(data);
+      } catch (err) {
+        console.error("Error fetching real insights:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchRealInsights();
+  }, []);
+
+  const overloadedCount = staticData.clinics.filter(c => (c.beds.occupied / c.beds.total) * 100 > 85).length;
+  const hospitalData = realInsights?.hospital_infrastructure;
+
+  if (loading) return (
+    <Layout activePath="#/clinics">
+      <div className="flex items-center justify-center min-h-[60vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
+      </div>
+    </Layout>
+  );
 
   return (
     <Layout activePath="#/clinics">
-      <div className="p-8 pb-24 max-w-[1400px] mx-auto">
-        <div className="mb-6">
+      <div className="p-8 pb-24 max-w-[1400px] mx-auto space-y-8">
+        
+        {/* Header */}
+        <div>
           <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
             <Building className="text-purple-500 shrink-0" size={26} /> 
-            Clinic-Level Insights
+            Health Infrastructure Insights
           </h2>
-          <p className="text-sm text-slate-500 mt-1 ml-[34px]">Patient load, resource usage, and capacity monitoring</p>
+          <p className="text-sm text-slate-500 mt-1 ml-[34px]">Real-time national stats & local capacity monitoring</p>
         </div>
 
-        {/* Summary Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-          <SummaryCard 
-            title="Total Clinics" 
-            value={data.summary.totalClinics} 
-            icon={Building} 
-            colorClass="text-blue-500" 
-          />
-          <SummaryCard 
-            title="Total Beds" 
-            value={data.summary.totalBeds} 
-            subtitle={`${data.summary.occupiedBeds} occupied`} 
-            icon={Bed} 
-            colorClass="text-indigo-500" 
-          />
-          <SummaryCard 
-            title="Total Staff" 
-            value={data.summary.totalStaff} 
-            subtitle={`${data.summary.activeStaff} active`} 
-            icon={Users} 
-            colorClass="text-emerald-500" 
-          />
-          <SummaryCard 
-            title="Over 85% Capacity" 
-            value={overloadedCount} 
-            icon={AlertTriangle} 
-            colorClass="text-amber-500 bg-amber-50" 
-            highlightValue={true}
-          />
-        </div>
+        {/* SECTION 1: REAL NATIONAL DATA */}
+        {hospitalData && (
+          <section className="space-y-6">
+            <div className="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <Sparkles className="text-amber-500" size={18} />
+              <h3 className="text-lg font-bold text-slate-700">National Infrastructure (Actual Data)</h3>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Rural vs Urban Beds */}
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+                <h4 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Bed Distribution</h4>
+                <div className="space-y-6">
+                  <div>
+                    <div className="flex justify-between text-sm mb-2">
+                      <span className="text-slate-600">Urban Beds</span>
+                      <span className="font-bold text-slate-800">{hospitalData.rural_vs_urban_beds.total_urban_beds.toLocaleString()}</span>
+                    </div>
+                    <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                      <div 
+                        className="bg-indigo-500 h-full" 
+                        style={{ width: `${(hospitalData.rural_vs_urban_beds.total_urban_beds / (hospitalData.rural_vs_urban_beds.total_urban_beds + hospitalData.rural_vs_urban_beds.total_rural_beds)) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-2">
+                      <span className="text-slate-600">Rural Beds</span>
+                      <span className="font-bold text-slate-800">{hospitalData.rural_vs_urban_beds.total_rural_beds.toLocaleString()}</span>
+                    </div>
+                    <div className="w-full bg-slate-100 h-3 rounded-full overflow-hidden">
+                      <div 
+                        className="bg-emerald-500 h-full" 
+                        style={{ width: `${(hospitalData.rural_vs_urban_beds.total_rural_beds / (hospitalData.rural_vs_urban_beds.total_urban_beds + hospitalData.rural_vs_urban_beds.total_rural_beds)) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        {/* Clinic Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.clinics.map((clinic, idx) => (
-             <ClinicCard key={idx} clinic={clinic} />
-          ))}
-        </div>
+              {/* Facility Types */}
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm lg:col-span-2">
+                <h4 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Government Facility Network</h4>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {[
+                    { label: 'PHC', value: hospitalData.facility_types.PHC, desc: 'Primary Health Centers', color: 'text-blue-600' },
+                    { label: 'CHC', value: hospitalData.facility_types.CHC, desc: 'Comm. Health Centers', color: 'text-indigo-600' },
+                    { label: 'SDH', value: hospitalData.facility_types.SDH, desc: 'Sub-District Hospitals', color: 'text-purple-600' },
+                    { label: 'DH', value: hospitalData.facility_types.DH, desc: 'District Hospitals', color: 'text-rose-600' },
+                  ].map((f, i) => (
+                    <div key={i} className="p-4 rounded-lg bg-slate-50 border border-slate-100 text-center">
+                      <p className={cn("text-xl font-bold", f.color)}>{f.value.toLocaleString()}</p>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase mt-1">{f.label}</p>
+                      <p className="text-[9px] text-slate-500 leading-tight mt-1">{f.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Top States */}
+            <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <h4 className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Top States by Total Bed Capacity</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                {hospitalData.top_states_by_beds.slice(0, 5).map((state: any, i: number) => (
+                  <div key={i} className="flex items-center gap-3 p-3 rounded-lg border border-slate-100 bg-slate-50/50">
+                    <div className="h-8 w-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-xs font-bold text-slate-400">
+                      #{i + 1}
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-slate-800 truncate max-w-[120px]">{state['State/UT']}</p>
+                      <p className="text-[10px] text-slate-500">{state.Total_Beds.toLocaleString()} Beds</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 2: SIMULATED LOCAL CLINICS */}
+        <section className="space-y-6">
+          <div className="flex items-center gap-2 border-b border-slate-200 pb-2">
+            <MapPin className="text-blue-500" size={18} />
+            <h3 className="text-lg font-bold text-slate-700">Simulated Regional Clinics</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <SummaryCard 
+              title="Total Clinics" 
+              value={staticData.summary.totalClinics} 
+              icon={Building} 
+              colorClass="text-blue-500" 
+            />
+            <SummaryCard 
+              title="Local Beds" 
+              value={staticData.summary.totalBeds} 
+              subtitle={`${staticData.summary.occupiedBeds} occupied`} 
+              icon={Bed} 
+              colorClass="text-indigo-500" 
+            />
+            <SummaryCard 
+              title="Total Staff" 
+              value={staticData.summary.totalStaff} 
+              subtitle={`${staticData.summary.activeStaff} active`} 
+              icon={Users} 
+              colorClass="text-emerald-500" 
+            />
+            <SummaryCard 
+              title="Over Capacity" 
+              value={overloadedCount} 
+              icon={AlertTriangle} 
+              colorClass="text-amber-500 bg-amber-50" 
+              highlightValue={true}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {staticData.clinics.map((clinic, idx) => (
+               <ClinicCard key={idx} clinic={clinic} />
+            ))}
+          </div>
+        </section>
       </div>
     </Layout>
   );
 }
+

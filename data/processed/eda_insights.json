@@ -95,5 +95,209 @@
             "symptom_cough",
             "symptom_shortness_of_breath"
         ]
+    },
+    "hospital_infrastructure": {
+        "statewise": {
+            "Andaman & Nicobar Islands": {
+                "Total_Hospitals": 34.0,
+                "Total_Beds": 1246.0
+            },
+            "Andhra Pradesh": {
+                "Total_Hospitals": 1666.0,
+                "Total_Beds": 60799.0
+            },
+            "Arunachal Pradesh": {
+                "Total_Hospitals": 199.0,
+                "Total_Beds": 2320.0
+            },
+            "Assam": {
+                "Total_Hospitals": 1220.0,
+                "Total_Beds": 19115.0
+            },
+            "Bihar": {
+                "Total_Hospitals": 2146.0,
+                "Total_Beds": 17796.0
+            },
+            "Chandigarh": {
+                "Total_Hospitals": 47.0,
+                "Total_Beds": 3756.0
+            },
+            "Chhattisgarh": {
+                "Total_Hospitals": 1023.0,
+                "Total_Beds": 14354.0
+            },
+            "Dadra & Nagar Haveli": {
+                "Total_Hospitals": 13.0,
+                "Total_Beds": 568.0
+            },
+            "Daman & Diu": {
+                "Total_Hospitals": 8.0,
+                "Total_Beds": 298.0
+            },
+            "Delhi": {
+                "Total_Hospitals": 615.0,
+                "Total_Beds": 20572.0
+            },
+            "Goa": {
+                "Total_Hospitals": 40.0,
+                "Total_Beds": 2666.0
+            },
+            "Gujarat": {
+                "Total_Hospitals": 2236.0,
+                "Total_Beds": 41129.0
+            },
+            "Haryana": {
+                "Total_Hospitals": 683.0,
+                "Total_Beds": 13841.0
+            },
+            "Himachal Pradesh": {
+                "Total_Hospitals": 671.0,
+                "Total_Beds": 8706.0
+            },
+            "Jammu & Kashmir": {
+                "Total_Hospitals": 818.0,
+                "Total_Beds": 11342.0
+            },
+            "Jharkhand": {
+                "Total_Hospitals": 558.0,
+                "Total_Beds": 7404.0
+            },
+            "Karnataka": {
+                "Total_Hospitals": 2943.0,
+                "Total_Beds": 56333.0
+            },
+            "Kerala": {
+                "Total_Hospitals": 1297.0,
+                "Total_Beds": 39511.0
+            },
+            "Lakshadweep": {
+                "Total_Hospitals": 10.0,
+                "Total_Beds": 250.0
+            },
+            "Madhya Pradesh": {
+                "Total_Hospitals": 1867.0,
+                "Total_Beds": 38140.0
+            },
+            "Maharashtra": {
+                "Total_Hospitals": 3239.0,
+                "Total_Beds": 68998.0
+            },
+            "Manipur": {
+                "Total_Hospitals": 114.0,
+                "Total_Beds": 2562.0
+            },
+            "Meghalaya": {
+                "Total_Hospitals": 180.0,
+                "Total_Beds": 4585.0
+            },
+            "Mizoram": {
+                "Total_Hospitals": 87.0,
+                "Total_Beds": 2312.0
+            },
+            "Nagaland": {
+                "Total_Hospitals": 166.0,
+                "Total_Beds": 1944.0
+            },
+            "Odisha": {
+                "Total_Hospitals": 1799.0,
+                "Total_Beds": 16497.0
+            },
+            "Puducherry": {
+                "Total_Hospitals": 53.0,
+                "Total_Beds": 4462.0
+            },
+            "Punjab": {
+                "Total_Hospitals": 742.0,
+                "Total_Beds": 13527.0
+            },
+            "Rajasthan": {
+                "Total_Hospitals": 3139.0,
+                "Total_Beds": 51844.0
+            },
+            "Sikkim": {
+                "Total_Hospitals": 32.0,
+                "Total_Beds": 1145.0
+            },
+            "Tamil Nadu": {
+                "Total_Hospitals": 2581.0,
+                "Total_Beds": 72616.0
+            },
+            "Telangana": {
+                "Total_Hospitals": 932.0,
+                "Total_Beds": 17358.0
+            },
+            "Tripura": {
+                "Total_Hospitals": 157.0,
+                "Total_Beds": 4895.0
+            },
+            "Uttar Pradesh": {
+                "Total_Hospitals": 4122.0,
+                "Total_Beds": 58310.0
+            },
+            "Uttarakhand": {
+                "Total_Hospitals": 383.0,
+                "Total_Beds": 6660.0
+            },
+            "West Bengal": {
+                "Total_Hospitals": 1905.0,
+                "Total_Beds": 51163.0
+            },
+            "All India": {
+                "Total_Hospitals": 0.0,
+                "Total_Beds": 0.0
+            }
+        },
+        "rural_vs_urban_beds": {
+            "total_rural_beds": 559176,
+            "total_urban_beds": 862346
+        },
+        "top_states_by_beds": [
+            {
+                "State/UT": "Tamil Nadu",
+                "Total_Beds": 72616.0
+            },
+            {
+                "State/UT": "Maharashtra",
+                "Total_Beds": 68998.0
+            },
+            {
+                "State/UT": "Andhra Pradesh",
+                "Total_Beds": 60799.0
+            },
+            {
+                "State/UT": "Uttar Pradesh",
+                "Total_Beds": 58310.0
+            },
+            {
+                "State/UT": "Karnataka",
+                "Total_Beds": 56333.0
+            },
+            {
+                "State/UT": "Rajasthan",
+                "Total_Beds": 51844.0
+            },
+            {
+                "State/UT": "West Bengal",
+                "Total_Beds": 51163.0
+            },
+            {
+                "State/UT": "Gujarat",
+                "Total_Beds": 41129.0
+            },
+            {
+                "State/UT": "Kerala",
+                "Total_Beds": 39511.0
+            },
+            {
+                "State/UT": "Madhya Pradesh",
+                "Total_Beds": 38140.0
+            }
+        ],
+        "facility_types": {
+            "PHC": 29899,
+            "CHC": 5568,
+            "SDH": 1255,
+            "DH": 1003
+        }
     }
 }
