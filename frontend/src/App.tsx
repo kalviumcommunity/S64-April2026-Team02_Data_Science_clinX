@@ -8,6 +8,7 @@ import {
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 import Layout from './components/Layout'
+import ReportsPage from './pages/ReportsPage'
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -17,6 +18,13 @@ export default function App() {
   const [insights, setInsights] = useState<any>(null)
   const [outbreaks, setOutbreaks] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
+  const [currentPath, setCurrentPath] = useState(window.location.hash || '#/')
+
+  useEffect(() => {
+    const handleHashChange = () => setCurrentPath(window.location.hash || '#/');
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,6 +52,10 @@ export default function App() {
       </div>
     </div>
   )
+
+  if (currentPath === '#/reports') {
+    return <ReportsPage />
+  }
 
   const topSymptomsData = insights?.top_symptoms 
     ? Object.entries(insights.top_symptoms)
