@@ -309,16 +309,22 @@ const ReportsPage = () => {
                     }}
                     labelStyle={{ color: '#64748b', fontWeight: 600, fontSize: '11px', marginBottom: '4px' }}
                     itemStyle={{ color: '#334155' }}
+                    formatter={(value: any, name: string) => {
+                      if (value === null || value === undefined) return [null, name];
+                      if (name === 'historical_fill') return [null, null]; // suppress duplicate
+                      return [value, name];
+                    }}
+                    filterNull={true}
                   />
                   {/* Confidence band */}
-                  <Area type="monotone" dataKey="upperBound" stroke="none" fill="url(#gradConf)" />
-                  <Area type="monotone" dataKey="lowerBound" stroke="none" fill="#fff" fillOpacity={1} />
-                  {/* Historical */}
-                  <Area type="monotone" dataKey="historical" stroke="none" fill="url(#gradHist)" />
+                  <Area type="monotone" dataKey="upperBound" name="Upper Bound (95% CI)" stroke="none" fill="url(#gradConf)" legendType="none" />
+                  <Area type="monotone" dataKey="lowerBound" name="Lower Bound (95% CI)" stroke="none" fill="#fff" fillOpacity={1} legendType="none" />
+                  {/* Historical fill — uses renamed key to avoid tooltip conflict */}
+                  <Area type="monotone" dataKey="historical" name="historical_fill" stroke="none" fill="url(#gradHist)" legendType="none" />
                   <Line
                     type="monotone"
                     dataKey="historical"
-                    name="Actual Cases"
+                    name="Historical Cases"
                     stroke="#10b981"
                     strokeWidth={2.5}
                     dot={false}
@@ -344,7 +350,7 @@ const ReportsPage = () => {
               <div className="flex items-center gap-5">
                 <span className="flex items-center gap-2 text-xs text-slate-500 font-medium">
                   <span className="w-5 h-[2.5px] bg-emerald-500 rounded-full inline-block"></span>
-                  Actual cases
+                  Historical cases
                 </span>
                 <span className="flex items-center gap-2 text-xs text-slate-500 font-medium">
                   <svg width="20" height="4" viewBox="0 0 20 4"><line x1="0" y1="2" x2="20" y2="2" stroke="#2563eb" strokeWidth="2.5" strokeDasharray="5 3"/></svg>
