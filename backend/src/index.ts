@@ -126,13 +126,51 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'Backend is running' });
 });
 
-// Notifications
-let notifications = [
-    { id: '1', title: 'New Outbreak Detected', message: 'Spike in fever cases in Region A', isRead: false, createdAt: new Date() },
-    { id: '2', title: 'Data Cleaning Complete', message: 'The latest batch of symptom data has been processed.', isRead: true, createdAt: new Date() }
-];
+let notifications: any[] = [];
 
 app.get('/api/notifications', (req, res) => {
+    const outbreaks = getOutbreaks();
+    const dynamicNotifs: any[] = [];
+    
+    if (outbreaks && outbreaks.length > 0) {
+        // Sort outbreaks by date
+        const sortedOutbreaks = [...outbreaks].sort((a: any, b: any) => new Date(a.Date).getTime() - new Date(b.Date).getTime());
+        const recentCases = sortedOutbreaks.slice(-5); // Check last 5 cases
+        
+        recentCases.forEach((caseData: any, idx: number) => {
+            if (caseData.Transmission_Rate > 2.0) {
+                dynamicNotifs.push({
+                    id: `rt_outbreak_${caseData.Date}_${idx}`,
+                    title: 'High Transmission Alert',
+                    message: `Recent case in ${caseData.Location} region showing severe transmission rate (${caseData.Transmission_Rate.toFixed(2)}). Age: ${caseData.Age}, Chronic: ${caseData.Chronic_Conditions ? 'Yes' : 'No'}.`,
+                    isRead: false,
+                    createdAt: new Date(caseData.Date)
+                });
+            }
+        });
+    }
+
+    // Add a real-time system status heartbeat
+    dynamicNotifs.push({
+        id: 'rt_system_pulse',
+        title: 'Data Stream Active',
+        message: `System successfully synchronized ${outbreaks.length} clinical records from the database.`,
+        isRead: true,
+        createdAt: new Date()
+    });
+
+    // Merge dynamic notifications into global state to preserve isRead status
+    dynamicNotifs.forEach(newNotif => {
+        const exists = notifications.find(n => n.id === newNotif.id);
+        if (!exists) {
+            // New notification!
+            notifications.unshift(newNotif);
+        }
+    });
+
+    // Sort all notifications by descending date
+    notifications.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+
     res.json(notifications);
 });
 

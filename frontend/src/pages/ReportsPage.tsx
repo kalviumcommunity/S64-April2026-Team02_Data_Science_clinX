@@ -309,9 +309,13 @@ const ReportsPage = () => {
               <TrendingUp size={350} />
             </div>
           </div>
+
+        
+
         </div>
       </div>
     </Layout>
+
   );
 };
 
