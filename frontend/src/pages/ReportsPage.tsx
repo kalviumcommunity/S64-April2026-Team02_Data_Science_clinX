@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
-  LineChart, Line, PieChart, Pie, Cell 
+  LineChart, Line, PieChart, Pie, Cell, ComposedChart, Area
 } from 'recharts';
-import { Users, Activity, ShieldAlert, FileText, TrendingUp, Calendar, ChevronRight } from 'lucide-react';
+import { Users, Activity, ShieldAlert, FileText, TrendingUp, Calendar, ChevronRight, Brain } from 'lucide-react';
 import { getReportSummary, default as api } from '../services/api';
 import Layout from '../components/Layout';
 
@@ -231,17 +231,82 @@ const ReportsPage = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 bg-slate-900 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+          <div className="lg:col-span-2 bg-gradient-to-br from-slate-900 via-[#0f172a] to-[#1e1b4b] text-white p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden border border-white/10 group transition-all duration-500 hover:shadow-purple-900/20 hover:border-white/20">
             <div className="relative z-10">
-              <h3 className="text-xl font-bold mb-2">Predictive Health Insights</h3>
-              <p className="text-slate-400 text-sm max-w-md">Our ML model suggests a 15% increase in respiratory cases over the next 14 days based on current humidity trends.</p>
-              <button className="mt-8 flex items-center gap-2 bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all backdrop-blur-sm border border-white/10">
-                Generate Full Prediction Report
-                <ChevronRight size={16} />
-              </button>
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                <div>
+                  <h3 className="text-2xl font-black mb-1 flex items-center gap-2 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    <Brain className="text-purple-400" size={24} />
+                    Predictive Health Forecast
+                  </h3>
+                  <p className="text-slate-400 text-sm max-w-xl leading-relaxed font-medium">
+                    {data.forecast?.insights || 'Loading ML forecast data...'}
+                  </p>
+                </div>
+                <div className="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 backdrop-blur-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  Live AI Engine
+                </div>
+              </div>
+              
+              <div className="h-64 w-full mt-8 mb-8 bg-black/20 rounded-2xl p-4 backdrop-blur-sm border border-white/5">
+                <ResponsiveContainer width="100%" height="100%">
+                  <ComposedChart data={data.forecast?.chartData || []} margin={{top: 10, right: 10, left: -20, bottom: 0}}>
+                    <defs>
+                      <linearGradient id="colorConf" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#a855f7" stopOpacity={0.3}/>
+                        <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
+                      </linearGradient>
+                      <linearGradient id="colorHist" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#10b981" stopOpacity={0.2}/>
+                        <stop offset="95%" stopColor="#10b981" stopOpacity={0}/>
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#334155" strokeOpacity={0.5} />
+                    <XAxis dataKey="day" stroke="#64748b" fontSize={10} tickLine={false} axisLine={false} tickFormatter={(val) => val.replace('Day ', '')} dy={10} />
+                    <YAxis stroke="#64748b" fontSize={10} tickLine={false} axisLine={false} dx={-10} />
+                    <Tooltip 
+                      contentStyle={{ backgroundColor: 'rgba(15, 23, 42, 0.9)', backdropFilter: 'blur(8px)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.1)' }}
+                      itemStyle={{ color: '#fff', fontWeight: 600 }}
+                      labelStyle={{ color: '#94a3b8', marginBottom: '6px', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em' }}
+                    />
+                    
+                    {/* Confidence Interval Area */}
+                    <Area type="monotone" dataKey="upperBound" stroke="none" fill="url(#colorConf)" />
+                    <Area type="monotone" dataKey="lowerBound" stroke="none" fill="#0f172a" fillOpacity={1} />
+                    
+                    {/* Historical Area & Line */}
+                    <Area type="monotone" dataKey="historical" stroke="none" fill="url(#colorHist)" />
+                    <Line type="monotone" dataKey="historical" name="Actual Cases" stroke="#10b981" strokeWidth={3} dot={false} activeDot={{ r: 6, fill: '#10b981', stroke: '#fff', strokeWidth: 2 }} />
+                    
+                    {/* Forecasted Line */}
+                    <Line type="monotone" dataKey="forecast" name="Predicted Cases" stroke="#a855f7" strokeWidth={3} strokeDasharray="6 6" dot={false} activeDot={{ r: 6, fill: '#a855f7', stroke: '#fff', strokeWidth: 2 }} animationDuration={2000} />
+                  </ComposedChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                <button 
+                  onClick={() => handleExport('pdf')}
+                  className="group flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-7 py-3.5 rounded-xl text-sm font-bold text-white transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] hover:-translate-y-0.5 border border-white/10"
+                >
+                  Generate Full Prediction Report
+                  <ChevronRight size={16} className="group-hover:translate-x-1.5 transition-transform duration-300" />
+                </button>
+                <div className="flex items-center gap-5 text-[10px] font-bold uppercase tracking-widest text-slate-300 bg-black/30 px-5 py-2.5 rounded-full border border-white/5 backdrop-blur-md">
+                  <span className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full bg-[#10b981] shadow-[0_0_8px_#10b981]"></div> Historical</span>
+                  <span className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full bg-[#a855f7] shadow-[0_0_8px_#a855f7]"></div> Forecast</span>
+                  <span className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full bg-purple-500/20 border border-purple-500/50"></div> 95% Conf</span>
+                </div>
+              </div>
             </div>
-            <div className="absolute right-[-20px] bottom-[-20px] opacity-10">
-              <TrendingUp size={200} />
+            
+            {/* Ambient Background Glows */}
+            <div className="absolute top-[-150px] right-[-150px] w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse duration-1000"></div>
+            <div className="absolute bottom-[-150px] left-[-150px] w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-pulse duration-1000 delay-700"></div>
+            
+            <div className="absolute right-[-30px] bottom-[-30px] opacity-[0.02] pointer-events-none transform -rotate-12 transition-transform duration-700 group-hover:rotate-0">
+              <TrendingUp size={350} />
             </div>
           </div>
         </div>
