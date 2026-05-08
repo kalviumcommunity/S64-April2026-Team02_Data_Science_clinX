@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
-  LineChart, Line, PieChart, Pie, Cell 
+  LineChart, Line, PieChart, Pie, Cell, ComposedChart, Area 
 } from 'recharts';
-import { Users, Activity, ShieldAlert, FileText, TrendingUp, Calendar, ChevronRight } from 'lucide-react';
+import { Users, Activity, ShieldAlert, FileText, TrendingUp, Calendar, ChevronRight, Brain } from 'lucide-react';
 import { getReportSummary, default as api } from '../services/api';
 import Layout from '../components/Layout';
 
@@ -231,22 +231,146 @@ const ReportsPage = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 bg-slate-900 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
-            <div className="relative z-10">
-              <h3 className="text-xl font-bold mb-2">Predictive Health Insights</h3>
-              <p className="text-slate-400 text-sm max-w-md">Our ML model suggests a 15% increase in respiratory cases over the next 14 days based on current humidity trends.</p>
-              <button className="mt-8 flex items-center gap-2 bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all backdrop-blur-sm border border-white/10">
-                Generate Full Prediction Report
-                <ChevronRight size={16} />
+          <div className="lg:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+
+            {/* Header — matches other chart cards */}
+            <div className="flex items-start justify-between mb-5">
+              <div>
+                <h3 className="font-bold text-slate-800 text-base flex items-center gap-2">
+                  <Brain size={18} className="text-blue-500" />
+                  Predictive Case Forecast
+                </h3>
+                <p className="text-xs text-slate-400 mt-1 max-w-md leading-relaxed">
+                  {data.forecast?.insights || 'Loading ML model output...'}
+                </p>
+              </div>
+              <div className="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 text-[11px] font-semibold px-2.5 py-1 rounded-full shrink-0 ml-4">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse inline-block"></span>
+                Live model
+              </div>
+            </div>
+
+            {/* Stat strip — 3 numbers in a row */}
+            <div className="grid grid-cols-3 divide-x divide-slate-100 bg-slate-50 border border-slate-200 rounded-xl mb-5 overflow-hidden">
+              <div className="px-4 py-3">
+                <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1">Horizon</p>
+                <p className="text-base font-bold text-slate-800">14 days</p>
+              </div>
+              <div className="px-4 py-3">
+                <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1">Avg Cases / Day</p>
+                <p className="text-base font-bold text-blue-600">
+                  {data.forecast?.chartData
+                    ? Math.round(data.forecast.chartData.slice(0, 30).reduce((s: number, d: any) => s + (d.historical || 0), 0) / 30)
+                    : '—'}
+                </p>
+              </div>
+              <div className="px-4 py-3">
+                <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1">Algorithm</p>
+                <p className="text-base font-bold text-slate-800">Trend + CI</p>
+              </div>
+            </div>
+
+            {/* Chart — same height and style as other charts on page */}
+            <div className="h-64 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <ComposedChart data={data.forecast?.chartData || []} margin={{top: 5, right: 5, left: -22, bottom: 0}}>
+                  <defs>
+                    <linearGradient id="gradConf" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#2563eb" stopOpacity={0.08}/>
+                      <stop offset="100%" stopColor="#2563eb" stopOpacity={0}/>
+                    </linearGradient>
+                    <linearGradient id="gradHist" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="#10b981" stopOpacity={0.12}/>
+                      <stop offset="100%" stopColor="#10b981" stopOpacity={0}/>
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                  <XAxis
+                    dataKey="day"
+                    stroke="#94a3b8"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                    dy={6}
+                    interval={6}
+                  />
+                  <YAxis
+                    stroke="#94a3b8"
+                    fontSize={11}
+                    tickLine={false}
+                    axisLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: '#fff',
+                      borderRadius: '12px',
+                      border: '1px solid #e2e8f0',
+                      boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
+                    }}
+                    labelStyle={{ color: '#64748b', fontWeight: 600, fontSize: '11px', marginBottom: '4px' }}
+                    itemStyle={{ color: '#334155' }}
+                  />
+                  {/* Confidence band */}
+                  <Area type="monotone" dataKey="upperBound" stroke="none" fill="url(#gradConf)" />
+                  <Area type="monotone" dataKey="lowerBound" stroke="none" fill="#fff" fillOpacity={1} />
+                  {/* Historical */}
+                  <Area type="monotone" dataKey="historical" stroke="none" fill="url(#gradHist)" />
+                  <Line
+                    type="monotone"
+                    dataKey="historical"
+                    name="Actual Cases"
+                    stroke="#10b981"
+                    strokeWidth={2.5}
+                    dot={false}
+                    activeDot={{ r: 5, fill: '#10b981', stroke: '#fff', strokeWidth: 2 }}
+                  />
+                  {/* Forecast */}
+                  <Line
+                    type="monotone"
+                    dataKey="forecast"
+                    name="Predicted Cases"
+                    stroke="#2563eb"
+                    strokeWidth={2.5}
+                    strokeDasharray="5 4"
+                    dot={false}
+                    activeDot={{ r: 5, fill: '#2563eb', stroke: '#fff', strokeWidth: 2 }}
+                  />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </div>
+
+            {/* Footer */}
+            <div className="flex items-center justify-between mt-5 pt-4 border-t border-slate-100">
+              <div className="flex items-center gap-5">
+                <span className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                  <span className="w-5 h-[2.5px] bg-emerald-500 rounded-full inline-block"></span>
+                  Actual cases
+                </span>
+                <span className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                  <svg width="20" height="4" viewBox="0 0 20 4"><line x1="0" y1="2" x2="20" y2="2" stroke="#2563eb" strokeWidth="2.5" strokeDasharray="5 3"/></svg>
+                  14-day forecast
+                </span>
+                <span className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                  <span className="w-3.5 h-3.5 bg-blue-50 border border-blue-200 inline-block rounded"></span>
+                  95% confidence
+                </span>
+              </div>
+              <button
+                onClick={() => handleExport('pdf')}
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all shadow-sm shadow-blue-200"
+              >
+                <FileText size={13} />
+                Export Report
               </button>
             </div>
-            <div className="absolute right-[-20px] bottom-[-20px] opacity-10">
-              <TrendingUp size={200} />
-            </div>
           </div>
+
+        
+
         </div>
       </div>
     </Layout>
+
   );
 };
 
