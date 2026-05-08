@@ -189,6 +189,7 @@ app.patch('/api/notifications/mark-all', (req, res) => {
 app.get('/api/reports/summary', (req, res) => {
     const insights = getInsights();
     const outbreaks = getOutbreaks();
+    const forecast = getForecast();
     
     res.json({
         totalUsers: 15, // Mocked
@@ -202,7 +203,7 @@ app.get('/api/reports/summary', (req, res) => {
             { name: 'Fungal', value: 15 },
             { name: 'Other', value: 10 }
         ],
-        forecast: getForecast()
+        forecast
     });
 });
 
